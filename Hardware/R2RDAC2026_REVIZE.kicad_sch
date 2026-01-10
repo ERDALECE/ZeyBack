@@ -1,0 +1,99 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid fd8d5118-3b8e-4403-850d-a1523e5be0c2)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 131.826 103.886) (size 70.358 33.528) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 6af94924-432d-4aab-b02c-63957d02e93d)
+    (property "Sheetname" "MCU" (at 131.826 103.1744 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "MCU.kicad_sch" (at 131.826 137.9986 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "R2RDAC2026_REVIZE"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 119.634 30.988) (size 85.725 36.576) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 70ade01a-8615-4475-afbe-c78d8ba9dca0)
+    (property "Sheetname" "ANALOG" (at 119.634 30.2764 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "ANALOG.kicad_sch" (at 119.634 68.1486 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "R2RDAC2026_REVIZE"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 25.654 29.21) (size 75.565 39.37) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 7dd4347a-52f5-4dd9-ac1f-42e7212a8386)
+    (property "Sheetname" "FPGA" (at 25.654 28.4984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "FPGA.kicad_sch" (at 25.654 69.1646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "R2RDAC2026_REVIZE"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 28.448 98.171) (size 75.565 34.163) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 92303e84-fb12-43bb-91f4-a81a99ab650e)
+    (property "Sheetname" "POWER" (at 28.448 97.4594 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "POWER.kicad_sch" (at 28.448 132.9186 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "R2RDAC2026_REVIZE"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 29.972 151.892) (size 73.66 28.448) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid fbe758d9-ca2e-446c-b491-f7b77b0a49ef)
+    (property "Sheetname" "ARTIX7 Sheet" (at 29.972 151.1804 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "ARTIX7.kicad_sch" (at 29.972 180.9246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "R2RDAC2026_REVIZE"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2" (page "6"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

@@ -1,0 +1,83 @@
+# =========================
+# General
+# =========================
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.old
+*.swp
+*.log
+
+# =========================
+# STM32CubeIDE / Eclipse
+# =========================
+**/Debug/
+**/Release/
+**/build/
+**/*.launch
+
+# CubeIDE bazý geçici dosyalar
+**/.metadata/
+**/.settings/org.eclipse.*.prefs
+
+# =========================
+# ARM toolchain outputs
+# =========================
+*.elf
+*.map
+*.lst
+*.o
+*.d
+*.a
+*.axf
+
+# =========================
+# Vivado
+# =========================
+**/.Xil/
+**/*.jou
+**/*.log
+**/*.str
+**/*.tmp
+
+# Vivado generated folders (proje yeniden üretir)
+**/*.cache/
+**/*.gen/
+**/*.hw/
+**/*.ip_user_files/
+**/*.runs/
+**/*.sim/
+
+# =========================
+# Quartus (ileride kullanýrsan)
+# =========================
+**/db/
+**/incremental_db/
+**/output_files/
+**/*.qws
+**/*.smsg
+**/*.rpt
+**/*.done
+**/*.jdi
+**/*.pin
+**/*.sof
+**/*.pof
+
+# =========================
+# KiCad (v6/v7/v8)
+# =========================
+*~
+_autosave-*
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.bak
+*.bck
+fp-info-cache
+*.kicad_prl
+
+# =========================
+# (Ýsteðe baðlý) Gerber çýktýlarý çok sýk deðiþiyorsa ignore edebilirsin
+# Þimdilik SENÝN GERBER klasörünü saklýyoruz, o yüzden kapalý:
+# =========================
+# Hardware/GERBER/**

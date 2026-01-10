@@ -1,0 +1,8 @@
+Firmware (including Firmware/Stm32 and Firmware/Fpga) is licensed under GPL-3.0-or-later
+for original code authored in this project.
+
+NOTE:
+- Third-party code included in the firmware tree (e.g., STM32Cube/HAL, middleware) remains under
+  its original license as stated in each file header and/or vendor license files.
+
+See the root LICENSE file and THIRD_PARTY_NOTICES.md for details.

@@ -34,5 +34,5 @@ begin
     end if;
   end process;
 
-  rst_n_out <= '1' when (rst_n_in='1' and cnt=0) else '0';
+  rst_n_out <= '0' when (rst_n_in='0' or cnt/=0) else '1';
 end architecture;

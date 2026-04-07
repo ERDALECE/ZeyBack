@@ -4,10 +4,10 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="65" Path="D:/R2R/14.12.2025/FPGA/STM_FINAL_HAND/STM_FINAL_HAND.xpr">
+<Project Product="Vivado" Version="7" Minor="65" Path="D:/R2R/14.12.2025/FPGA/STM32H750_PCM_DSD/STM32H750_PCM_DSD.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="1631815e34d84ef69b23716de25b28c1"/>
+    <Option Name="Id" Val="722a5ca500ef49a7b0715b5ddc83994c"/>
     <Option Name="Part" Val="xc7a100tcsg324-2"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -69,13 +69,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="20"/>
-    <Option Name="WTModelSimExportSim" Val="20"/>
-    <Option Name="WTQuestaExportSim" Val="20"/>
+    <Option Name="WTXSimExportSim" Val="22"/>
+    <Option Name="WTModelSimExportSim" Val="22"/>
+    <Option Name="WTQuestaExportSim" Val="22"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="20"/>
-    <Option Name="WTRivieraExportSim" Val="20"/>
-    <Option Name="WTActivehdlExportSim" Val="20"/>
+    <Option Name="WTVcsExportSim" Val="22"/>
+    <Option Name="WTRivieraExportSim" Val="22"/>
+    <Option Name="WTActivehdlExportSim" Val="22"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -97,15 +97,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../DIYAUDIO/R2RDAC/R2RDAC_ARTIX/R2RDAC_ARTIX.srcs/sources_1/ip/pll/pll.xci"/>
           <Attr Name="ImportTime" Val="1739466088"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/RCLK_fifo/RCLK_fifo.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../DIYAUDIO/R2RDAC/R2RDAC_ARTIX_DSP/R2RDAC_ARTIX_DSP.srcs/sources_1/ip/RCLK_fifo/RCLK_fifo.xci"/>
-          <Attr Name="ImportTime" Val="1752336228"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -135,16 +126,18 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/RECLK/i2s_tx.vhd">
+      <File Path="$PSRCDIR/sources_1/new/RECLK/i2s_tx_reclk_bclk64.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../DIYAUDIO/R2RDAC/R2RDAC_ARTIX_DSP_RCLK/R2RDAC_ARTIX_DSP_RCLK.srcs/sources_1/new/RECLK/i2s_tx.vhd"/>
-          <Attr Name="ImportTime" Val="1752939647"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../STM_FINAL_HAND/STM_FINAL_HAND.srcs/sources_1/new/RECLK/i2s_tx_reclk_bclk64.vhd"/>
+          <Attr Name="ImportTime" Val="1768295699"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../STM_FINAL/STM_FINAL.srcs/sources_1/new/RECLK/Reclock.vhd">
+      <File Path="$PSRCDIR/sources_1/new/RECLK/Reclock_bclk64.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../STM_FINAL_HAND/STM_FINAL_HAND.srcs/sources_1/new/RECLK/Reclock_bclk64.vhd"/>
+          <Attr Name="ImportTime" Val="1768299832"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -173,10 +166,18 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/sr_latch_ctrl.vhd">
+      <File Path="$PSRCDIR/sources_1/new/delay.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../STM_FINAL/STM_FINAL.srcs/sources_1/new/sr_latch_ctrl.vhd"/>
-          <Attr Name="ImportTime" Val="1766917852"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../STM32H750_BASIC_DSD/STM32H750_BASIC_DSD.srcs/sources_1/new/delay.vhd"/>
+          <Attr Name="ImportTime" Val="1774963883"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/fmc32_to_i2s_dsd.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../STM32H750_BASIC_DSD/STM32H750_BASIC_DSD.srcs/sources_1/new/fmc32_to_i2s_dsd.vhd"/>
+          <Attr Name="ImportTime" Val="1774888496"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -189,34 +190,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/stm8_parallel_rx_strobe.vhd">
+      <File Path="$PSRCDIR/sources_1/new/sample_rate_dedector_lock.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../STM_FINAL_SI/STM_FINAL_SI.srcs/sources_1/new/stm8_parallel_rx_strobe.vhd"/>
-          <Attr Name="ImportTime" Val="1767820272"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/stm_parallel_to_i2s.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../STM_FINAL_SI/STM_FINAL_SI.srcs/sources_1/new/stm_parallel_to_i2s.vhd"/>
-          <Attr Name="ImportTime" Val="1767794757"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/DSP/DSP.vhd">
-        <FileInfo SFType="VHDL2019">
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../DIYAUDIO/R2RDAC/R2RDAC_ARTIX/R2RDAC_ARTIX.srcs/sources_1/new/DSP/DSP.vhd"/>
-          <Attr Name="ImportTime" Val="1739811784"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/sample_dedect.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../DIYAUDIO/R2RDAC/R2RDAC_ARTIX/R2RDAC_ARTIX.srcs/sources_1/new/sample_dedect.vhd"/>
-          <Attr Name="ImportTime" Val="1680203426"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../STM_BASIC/STM_BASIC.srcs/sources_1/new/sample_rate_dedector_lock.vhd"/>
+          <Attr Name="ImportTime" Val="1768990079"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -229,18 +206,18 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/DSP/FIR_FILTER.vhd">
-        <FileInfo SFType="VHDL2019">
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../DIYAUDIO/R2RDAC/R2RDAC_ARTIX/R2RDAC_ARTIX.srcs/sources_1/new/DSP/FIR_FILTER.vhd"/>
-          <Attr Name="ImportTime" Val="1739813832"/>
+      <File Path="$PSRCDIR/sources_1/new/spi_status_slave.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../STM32H750_BASIC/STM32H750_BASIC.srcs/sources_1/new/spi_status_slave.vhd"/>
+          <Attr Name="ImportTime" Val="1772891950"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/r2rdac.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../DIYAUDIO/R2RDAC/R2RDAC_ARTIX/R2RDAC_ARTIX.srcs/sources_1/new/r2rdac.vhd"/>
-          <Attr Name="ImportTime" Val="1739821972"/>
+        <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../STM32H750_BASIC/STM32H750_BASIC.srcs/sources_1/new/r2rdac.vhd"/>
+          <Attr Name="ImportTime" Val="1773775078"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -257,6 +234,14 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../DIYAUDIO/R2RDAC/R2RDAC_ARTIX/R2RDAC_ARTIX.srcs/constrs_1/new/r2rdac.xdc"/>
           <Attr Name="ImportTime" Val="1739806368"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/new/00_default_iostd.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../STM32H750_BASIC/STM32H750_BASIC.srcs/constrs_1/new/00_default_iostd.xdc"/>
+          <Attr Name="ImportTime" Val="1769340314"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

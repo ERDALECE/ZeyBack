@@ -482,7 +482,7 @@ end process;
   activity_eval_proc: process (clk)
    begin
       if clk'event and clk = '1' then
-		 if (i_clock_freq_int < 200) then
+		 if (i_clock_freq_int = 8) then
 		   active <= not sync_lost;
          LR_Clk_in <= lrck_int and not sync_lost;
          bsync<= bsync_int and not sync_lost;

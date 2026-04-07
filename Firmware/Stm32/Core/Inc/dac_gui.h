@@ -8,8 +8,6 @@
 #ifndef INC_DAC_GUI_H_
 #define INC_DAC_GUI_H_
 
-#include "u8g.h"
-
 
 #define  bigfont United20//Azonix18
 #define  pcmfont United10//Digital10
@@ -29,6 +27,10 @@
 #define IR_KEY_DSP     5
 #define IR_KEY_RCLK    6
 #define IR_KEY_SRC     15
+
+#define IR_KEY_SRC_P     9
+#define IR_KEY_SRC_M     7
+
 
 #define BR         (LL_GPIO_IsInputPinSet(GPIOB, BitRate_Pin))
 #define DSP_1     LL_GPIO_SetOutputPin(GPIOC, DSP1_Pin);
@@ -54,24 +56,26 @@ typedef struct {
 typedef void (*enter_fn_t)(void);
 
 typedef struct {
-    uint8_t sel0, sel1, sel2;
+    uint8_t sel0, sel1, sel2, sel3;
     enter_fn_t on_enter;
 } source_cfg_t;
 
 enum {
-    SRC_XMOS = 0,
+    SRC_STM32 = 0,
     SRC_COAX = 1,
     SRC_OPT1 = 2,
     SRC_OPT2 = 3,
     SRC_HDMI = 4,
-    SRC_STM32 = 5,
+    SRC_XMOS = 5,
     SRC_COAX_FPGA = 6,
+	SRC_I2S_FPGA = 7,
+	SRC_OPT1_FPGA = 8,
+	SRC_OPT2_FPGA = 9,
 };
 
 
 void poll_fpga_data(void);
 void apply_input_select(uint8_t src);
-void draw_status_screen(u8g_t *u8g, const ui_state_t *s);
 void handle_rc5(void);
 
 #endif /* INC_DAC_GUI_H_ */

@@ -11,13 +11,13 @@
 #include "stm32h7xx_hal.h"
 
 // SPI handle tanımı
-extern SPI_HandleTypeDef hspi2;
+extern SPI_HandleTypeDef hspi4;
 
 // CS8416 Chip Select pin kontrolü (örnek)
 
 
-#define CS8416_CS_LOW()       LL_GPIO_ResetOutputPin (GPIOD, CS8416_CSB_Pin)
-#define CS8416_CS_HIGH()      LL_GPIO_SetOutputPin (GPIOD, CS8416_CSB_Pin)
+#define CS8416_CS_LOW()       LL_GPIO_ResetOutputPin (GPIOE, CS8416_CSB_Pin)
+#define CS8416_CS_HIGH()      LL_GPIO_SetOutputPin (GPIOE, CS8416_CSB_Pin)
 
 // Fonksiyon prototipleri
 void CS8416_WriteRegister(uint8_t regAddr, uint8_t data);

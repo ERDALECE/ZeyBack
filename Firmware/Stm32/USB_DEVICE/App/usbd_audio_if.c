@@ -22,25 +22,6 @@ USBD_AUDIO_ItfTypeDef USBD_AUDIO_fops =
   AUDIO_GetState,
 };
 
-static void Set_PLL3_Audio_Clock(uint32_t fs)
-{
-
-
-	  if(fs % 44100 == 0) {
-	        // 44.1, 88.2, 176.4 kHz için PLL3 ayarları
-
-		//  set_sr_44_48(0);
-
-
-	    } else {
-	        // 48, 96, 192 kHz için PLL3 ayarları
-
-	   // 	set_sr_44_48(1);
-
-	    }
-
-
-}
 
 static uint8_t AUDIO_Init()
 {
@@ -101,7 +82,7 @@ uint8_t AUDIO_AudioCmd(uint8_t* pbuf, uint32_t size, uint8_t cmd)
 
 	case AUDIO_CMD_FREQ:
 
-		Set_PLL3_Audio_Clock(haudio->sam_freq);
+		//Set_PLL3_Audio_Clock(haudio->sam_freq);
 		break;
 
 	case AUDIO_CMD_MUTE:

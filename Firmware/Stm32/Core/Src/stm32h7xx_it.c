@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2025 STMicroelectronics.
+  * Copyright (c) 2026 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -55,6 +55,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+extern DMA_HandleTypeDef hdma_memtomem_dma1_stream0;
 extern TIM_HandleTypeDef htim3;
 extern PCD_HandleTypeDef hpcd_USB_OTG_HS;
 /* USER CODE BEGIN EV */
@@ -199,6 +200,8 @@ void SysTick_Handler(void)
 /* please refer to the startup file (startup_stm32h7xx.s).                    */
 /******************************************************************************/
 
+
+
 /**
   * @brief This function handles TIM3 global interrupt.
   */
@@ -211,26 +214,6 @@ void TIM3_IRQHandler(void)
   /* USER CODE BEGIN TIM3_IRQn 1 */
 
   /* USER CODE END TIM3_IRQn 1 */
-}
-
-/**
-  * @brief This function handles EXTI line[15:10] interrupts.
-  */
-void EXTI15_10_IRQHandler(void)
-{
-  /* USER CODE BEGIN EXTI15_10_IRQn 0 */
-
-  /* USER CODE END EXTI15_10_IRQn 0 */
-  if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_10) != RESET)
-  {
-    LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_10);
-    /* USER CODE BEGIN LL_EXTI_LINE_10 */
-    HAL_GPIO_EXTI_Callback(GPIO_PIN_10);
-    /* USER CODE END LL_EXTI_LINE_10 */
-  }
-  /* USER CODE BEGIN EXTI15_10_IRQn 1 */
-
-  /* USER CODE END EXTI15_10_IRQn 1 */
 }
 
 /**

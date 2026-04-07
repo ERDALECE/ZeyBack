@@ -48,3 +48,15 @@ See:
 ## Status
 
 Work in progress.
+Hardware design files in this directory (KiCad schematics/PCB and related design sources)
+are licensed under CERN-OHL-S-2.0 (Strongly Reciprocal).
+
+Manufacturing outputs (Gerbers) are provided for convenience.
+
+See THIRD_PARTY_NOTICES.md for any third-party footprints/symbols (if applicable).
+Hardware design files in this directory (KiCad schematics/PCB and related design sources)
+are licensed under CERN-OHL-S-2.0 (Strongly Reciprocal).
+
+Manufacturing outputs (Gerbers) are provided for convenience.
+
+See THIRD_PARTY_NOTICES.md for any third-party footprints/symbols (if applicable).

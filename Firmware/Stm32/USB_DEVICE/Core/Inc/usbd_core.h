@@ -51,6 +51,8 @@ extern "C" {
   */
 
 
+
+
 /** @defgroup USBD_CORE_Exported_TypesDefinitions
   * @{
   */

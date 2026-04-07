@@ -17,7 +17,7 @@ void CS8416_WriteRegister(uint8_t regAddr, uint8_t data)
 
     CS8416_CS_LOW();
 
-   HAL_SPI_Transmit(&hspi2, txData, 3, HAL_MAX_DELAY);
+   HAL_SPI_Transmit(&hspi4, txData, 3, HAL_MAX_DELAY);
 
     CS8416_CS_HIGH();
     HAL_Delay(1);
@@ -35,14 +35,14 @@ HAL_StatusTypeDef CS8416_ReadRegister(uint8_t regAddr, uint8_t *data)
 	    txData[1] = regAddr;
 
 	    CS8416_CS_LOW();
-	    status = HAL_SPI_Transmit(&hspi2, txData, 2, HAL_MAX_DELAY);
+	    status = HAL_SPI_Transmit(&hspi4, txData, 2, HAL_MAX_DELAY);
 	    CS8416_CS_HIGH();
 	    if (status != HAL_OK) return status;
 
 	    // 2. Read başlat
 	    uint8_t readAddr = 0x21;
 	    CS8416_CS_LOW();
-	    status = HAL_SPI_Transmit(&hspi2, &readAddr, 1, HAL_MAX_DELAY);
+	    status = HAL_SPI_Transmit(&hspi4, &readAddr, 1, HAL_MAX_DELAY);
 	    if (status != HAL_OK) {
 	        CS8416_CS_HIGH();
 	        return status;
@@ -50,7 +50,7 @@ HAL_StatusTypeDef CS8416_ReadRegister(uint8_t regAddr, uint8_t *data)
 
 	    // 3. Data oku
 	    uint8_t dummy = 0xFF;
-	    status = HAL_SPI_TransmitReceive(&hspi2, &dummy, data, 1, HAL_MAX_DELAY);
+	    status = HAL_SPI_TransmitReceive(&hspi4, &dummy, data, 1, HAL_MAX_DELAY);
 	    CS8416_CS_HIGH();
 	    HAL_Delay(1);
 	    return status;
@@ -71,10 +71,10 @@ void CS8416_Init(void)
 {
 
      uint8_t reg;
-	LL_GPIO_ResetOutputPin(GPIOD, RSTB_Pin);
+	LL_GPIO_ResetOutputPin(GPIOC, RSTB_Pin);
 	 CS8416_CS_HIGH();
 	HAL_Delay(1);
-	LL_GPIO_SetOutputPin(GPIOD, RSTB_Pin);
+	LL_GPIO_SetOutputPin(GPIOC, RSTB_Pin);
 	 CS8416_CS_LOW();
 	HAL_Delay(1);
 	 CS8416_CS_HIGH();

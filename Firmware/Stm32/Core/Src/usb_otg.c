@@ -7,7 +7,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2025 STMicroelectronics.
+  * Copyright (c) 2026 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -71,44 +71,52 @@ void HAL_PCD_MspInit(PCD_HandleTypeDef* pcdHandle)
     LL_RCC_SetUSBClockSource(LL_RCC_USB_CLKSOURCE_PLL1Q);
     LL_PWR_EnableUSBVoltageDetector();
 
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+    __HAL_RCC_GPIOI_CLK_ENABLE();
     __HAL_RCC_GPIOC_CLK_ENABLE();
     __HAL_RCC_GPIOA_CLK_ENABLE();
-    __HAL_RCC_GPIOB_CLK_ENABLE();
     /**USB_OTG_HS GPIO Configuration
+    PB5     ------> USB_OTG_HS_ULPI_D7
+    PI11     ------> USB_OTG_HS_ULPI_DIR
     PC0     ------> USB_OTG_HS_ULPI_STP
-    PC2_C     ------> USB_OTG_HS_ULPI_DIR
-    PC3_C     ------> USB_OTG_HS_ULPI_NXT
-    PA3     ------> USB_OTG_HS_ULPI_D0
-    PA5     ------> USB_OTG_HS_ULPI_CK
-    PB0     ------> USB_OTG_HS_ULPI_D1
-    PB1     ------> USB_OTG_HS_ULPI_D2
+    PC3     ------> USB_OTG_HS_ULPI_NXT
     PB10     ------> USB_OTG_HS_ULPI_D3
     PB11     ------> USB_OTG_HS_ULPI_D4
+    PA5     ------> USB_OTG_HS_ULPI_CK
+    PB1     ------> USB_OTG_HS_ULPI_D2
     PB12     ------> USB_OTG_HS_ULPI_D5
+    PA3     ------> USB_OTG_HS_ULPI_D0
+    PB0     ------> USB_OTG_HS_ULPI_D1
     PB13     ------> USB_OTG_HS_ULPI_D6
-    PB5     ------> USB_OTG_HS_ULPI_D7
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_2|GPIO_PIN_3;
+    GPIO_InitStruct.Pin = GPIO_PIN_5|GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_1
+                          |GPIO_PIN_12|GPIO_PIN_0|GPIO_PIN_13;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF10_OTG2_HS;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+    GPIO_InitStruct.Pin = GPIO_PIN_11;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF10_OTG2_HS;
+    HAL_GPIO_Init(GPIOI, &GPIO_InitStruct);
+
+    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_3;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF10_OTG2_HS;
     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-    GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_5;
+    GPIO_InitStruct.Pin = GPIO_PIN_5|GPIO_PIN_3;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF10_OTG2_HS;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_10|GPIO_PIN_11
-                          |GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_5;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    GPIO_InitStruct.Alternate = GPIO_AF10_OTG2_HS;
-    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
     /* USB_OTG_HS clock enable */
     __HAL_RCC_USB_OTG_HS_CLK_ENABLE();
@@ -136,25 +144,27 @@ void HAL_PCD_MspDeInit(PCD_HandleTypeDef* pcdHandle)
     __HAL_RCC_USB_OTG_HS_ULPI_CLK_DISABLE();
 
     /**USB_OTG_HS GPIO Configuration
+    PB5     ------> USB_OTG_HS_ULPI_D7
+    PI11     ------> USB_OTG_HS_ULPI_DIR
     PC0     ------> USB_OTG_HS_ULPI_STP
-    PC2_C     ------> USB_OTG_HS_ULPI_DIR
-    PC3_C     ------> USB_OTG_HS_ULPI_NXT
-    PA3     ------> USB_OTG_HS_ULPI_D0
-    PA5     ------> USB_OTG_HS_ULPI_CK
-    PB0     ------> USB_OTG_HS_ULPI_D1
-    PB1     ------> USB_OTG_HS_ULPI_D2
+    PC3     ------> USB_OTG_HS_ULPI_NXT
     PB10     ------> USB_OTG_HS_ULPI_D3
     PB11     ------> USB_OTG_HS_ULPI_D4
+    PA5     ------> USB_OTG_HS_ULPI_CK
+    PB1     ------> USB_OTG_HS_ULPI_D2
     PB12     ------> USB_OTG_HS_ULPI_D5
+    PA3     ------> USB_OTG_HS_ULPI_D0
+    PB0     ------> USB_OTG_HS_ULPI_D1
     PB13     ------> USB_OTG_HS_ULPI_D6
-    PB5     ------> USB_OTG_HS_ULPI_D7
     */
-    HAL_GPIO_DeInit(GPIOC, GPIO_PIN_0|GPIO_PIN_2|GPIO_PIN_3);
+    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_5|GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_1
+                          |GPIO_PIN_12|GPIO_PIN_0|GPIO_PIN_13);
 
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_3|GPIO_PIN_5);
+    HAL_GPIO_DeInit(GPIOI, GPIO_PIN_11);
 
-    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_10|GPIO_PIN_11
-                          |GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_5);
+    HAL_GPIO_DeInit(GPIOC, GPIO_PIN_0|GPIO_PIN_3);
+
+    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_5|GPIO_PIN_3);
 
     /* USB_OTG_HS interrupt Deinit */
     HAL_NVIC_DisableIRQ(OTG_HS_IRQn);

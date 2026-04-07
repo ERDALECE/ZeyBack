@@ -75,14 +75,14 @@
 
  void ADV7611_Reset(void){
 
-	 LL_GPIO_ResetOutputPin(GPIOA, HDMI_RESET_Pin);
+	 LL_GPIO_ResetOutputPin(GPIOI, HDMI_RESET_Pin);
  }
 
 uint8_t ADV7611_Init(void){
 	uint8_t adv7611_ID = 0;
 	//LL_GPIO_ResetOutputPin(GPIOA, HDMI_RESET_Pin);
 	//HAL_Delay(6);
-	LL_GPIO_SetOutputPin(GPIOA, HDMI_RESET_Pin);
+	LL_GPIO_SetOutputPin(GPIOI, HDMI_RESET_Pin);
 	//HAL_Delay(1);
 
 		HAL_I2C_Master_Transmit(&hi2c1,(TX_ADV7611_Addr),TX_ADV7611_Buffer0,2,HAL_MAX_DELAY);

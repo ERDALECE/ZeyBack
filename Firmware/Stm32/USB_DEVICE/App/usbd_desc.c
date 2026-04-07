@@ -62,9 +62,10 @@
   * @{
   */
 
-#define USBD_VID     						1155
+#define USBD_VID     						0x1209//1155//0x1209
 #define USBD_LANGID_STRING     				1033
-#define USBD_PID_HS     					0x5730
+#define USBD_PID_HS     					0x2028//0x5730//0x2028
+//#define USBD_PID_FS                         0x2028
 
 #define USBD_MANUFACTURER_STRING     "ZeyBack Audio"
 #define USBD_PRODUCT_STRING_HS       "ZeyBack_R2RDAC"

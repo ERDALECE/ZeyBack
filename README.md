@@ -2,6 +2,28 @@
 
 High-performance DIY USB Audio / FPGA based R-2R DAC platform.
 
+
+The STM32H750 MCU plays audio in 44.1 kHz - 768 kHz PCM and DSD64 - DSD512 DSD (DoP) formats. 
+
+Optionally, a second USB audio input can be added by connecting an XMOS or AMANERO.
+
+SPDIF audio input up to 192 kHz is possible via the CS8416 or directly through the FPGA input.
+
+It has one coaxial and two optical inputs.
+
+HDMI audio input is possible with the ADV7611.
+
+Direct I2S signal pins are also provided. An external I2S signal can also be supplied as an input through these pins.
+
+With the SI5340, the reclocking operation is performed within the FPGA.
+
+Input selection via infrared remote control is possible using the RC5 code. Debugging can be done via a separate USB COM port. 
+Status information (sample rate, bitrate, selected input, etc.) is output as SPI from the FPGA.
+MCUs, displays, etc., can be connected to SPI pins to display information via a GUI.
+
+All tests have been completed and no serious bugs have been found. However, it is open to improvement.
+
+
 This repository contains:
 - STM32H743 USB Audio Class 2.0 (UAC2) firmware (PCM + DSD related work)
 - FPGA logic used for audio data path / clocking / I2S/DSD processing

@@ -32,7 +32,7 @@ This repository contains:
 ## Repository structure
 
 - `Firmware/Stm32/`  
-  STM32H743 project (STM32CubeIDE). Includes STM32Cube/HAL and middleware components.
+  STM32H750 project (STM32CubeIDE). Includes STM32Cube/HAL and middleware components.
 
 - `Firmware/Fpga/`  
   FPGA project files (Vivado project + sources).

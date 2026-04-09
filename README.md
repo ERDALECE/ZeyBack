@@ -21,6 +21,8 @@ Input selection via infrared remote control is possible using the RC5 code. Debu
 Status information (sample rate, bitrate, selected input, etc.) is output as SPI from the FPGA.
 MCUs, displays, etc., can be connected to SPI pins to display information via a GUI.
 
+Main PCB is 6 Layer, DSD PCB is 4 Layer. 
+
 All tests have been completed and no serious bugs have been found. However, it is open to improvement.
 
 

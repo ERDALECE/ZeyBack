@@ -25,7 +25,7 @@ All tests have been completed and no serious bugs have been found. However, it i
 
 
 This repository contains:
-- STM32H743 USB Audio Class 2.0 (UAC2) firmware (PCM + DSD related work)
+- STM32H750 USB Audio Class 2.0 (UAC2) firmware (PCM + DSD related work)
 - FPGA logic used for audio data path / clocking / I2S/DSD processing
 - Hardware design files (KiCad schematics/PCB, BOM, Gerbers)
 

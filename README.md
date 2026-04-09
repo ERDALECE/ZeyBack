@@ -42,6 +42,9 @@ This repository contains:
 
 - `Hardware/`  
   KiCad project files, BOM/CSV, and manufacturing outputs (Gerbers).
+  
+- `Pictures/` 
+  Some testing and pcb pictures
 
 ## Build / Tools
 

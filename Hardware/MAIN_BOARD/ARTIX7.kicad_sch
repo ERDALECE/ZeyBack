@@ -5,6 +5,98 @@
   (paper "A2")
 
   (lib_symbols
+    (symbol "Connector:Conn_01x04_Pin" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Conn_01x04_Pin" (at 0 -7.62 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_locked" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "ki_keywords" "connector" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Generic connector, single row, 01x04, script generated" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Conn_01x04_Pin_1_1"
+        (polyline
+          (pts
+            (xy 1.27 -5.08)
+            (xy 0.8636 -5.08)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -2.54)
+            (xy 0.8636 -2.54)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy 0.8636 0)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 2.54)
+            (xy 0.8636 2.54)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 0.8636 -4.953) (end 0 -5.207)
+          (stroke (width 0.1524) (type default))
+          (fill (type outline))
+        )
+        (rectangle (start 0.8636 -2.413) (end 0 -2.667)
+          (stroke (width 0.1524) (type default))
+          (fill (type outline))
+        )
+        (rectangle (start 0.8636 0.127) (end 0 -0.127)
+          (stroke (width 0.1524) (type default))
+          (fill (type outline))
+        )
+        (rectangle (start 0.8636 2.667) (end 0 2.413)
+          (stroke (width 0.1524) (type default))
+          (fill (type outline))
+        )
+        (pin passive line (at 5.08 2.54 180) (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 5.08 0 180) (length 3.81)
+          (name "Pin_2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 5.08 -2.54 180) (length 3.81)
+          (name "Pin_3" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 5.08 -5.08 180) (length 3.81)
+          (name "Pin_4" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
       (property "Reference" "TP" (at 0 6.858 0)
         (effects (font (size 1.27 1.27)))
@@ -37,51 +129,6 @@
         (pin passive line (at 0 0 90) (length 2.54)
           (name "1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x02" (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x02_1_1"
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 1.27) (end 1.27 -3.81)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1918,6 +1965,149 @@
         )
       )
     )
+    (symbol "PCM_Resistor_AKL:R_4x0402_Convex" (pin_names (offset 0.002) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "RN" (at 5.08 1.27 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "R_4x0402_Convex" (at 5.08 -1.27 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "Resistor_SMD_AKL:R_Array_Convex_4x0402" (at 0 -12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "R smd network parallel isolated eu x4 0402" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "4x0402 SMD Resistor Network, Isolated, European Symbol, Alternate KiCad Library" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "R_4x0402_Convex_0_1"
+        (rectangle (start -6.35 -2.413) (end 3.81 2.413)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (rectangle (start -5.715 1.905) (end -4.445 -1.905)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -3.175 1.905) (end -1.905 -1.905)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -0.635 1.905) (end 0.635 -1.905)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.08 -2.54)
+            (xy -5.08 -1.905)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.08 1.905)
+            (xy -5.08 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.54 -2.54)
+            (xy -2.54 -1.905)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.54 1.905)
+            (xy -2.54 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 -2.54)
+            (xy 0 -1.905)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.905)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 -2.54)
+            (xy 2.54 -1.905)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 1.905)
+            (xy 2.54 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 1.905 1.905) (end 3.175 -1.905)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "R_4x0402_Convex_1_1"
+        (pin passive line (at -5.08 -5.08 90) (length 2.54)
+          (name "R1.1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -2.54 -5.08 90) (length 2.54)
+          (name "R2.1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -5.08 90) (length 2.54)
+          (name "R3.1" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 -5.08 90) (length 2.54)
+          (name "R4.1" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 5.08 270) (length 2.54)
+          (name "R4.2" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 5.08 270) (length 2.54)
+          (name "R3.2" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -2.54 5.08 270) (length 2.54)
+          (name "R2.2" (effects (font (size 1.27 1.27))))
+          (number "7" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 5.08 270) (length 2.54)
+          (name "R1.2" (effects (font (size 1.27 1.27))))
+          (number "8" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "SW" (at 1.27 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -2646,6 +2836,9 @@
   (junction (at 111.252 355.092) (diameter 0) (color 0 0 0 0)
     (uuid 3ab85453-bd54-41f0-8a56-e7f4025532ed)
   )
+  (junction (at 66.548 299.466) (diameter 0) (color 0 0 0 0)
+    (uuid 3d62aabd-1e14-4a76-811a-4d378978551b)
+  )
   (junction (at 139.827 371.348) (diameter 0) (color 0 0 0 0)
     (uuid 3e56e5be-54aa-404f-86f3-574497ae19a2)
   )
@@ -2904,9 +3097,6 @@
   (junction (at 51.308 290.068) (diameter 0) (color 0 0 0 0)
     (uuid cd2d1986-9ed0-4217-8ac9-668d9d16926d)
   )
-  (junction (at 554.863 245.491) (diameter 0) (color 0 0 0 0)
-    (uuid cd36035a-3ca2-404f-ba75-f6ee8e618f68)
-  )
   (junction (at 546.608 165.862) (diameter 0) (color 0 0 0 0)
     (uuid ce467ae8-9b6c-4773-8856-d2c8dac67b57)
   )
@@ -3029,7 +3219,6 @@
   (no_connect (at 304.673 96.266) (uuid 2f00524c-deae-41cd-bbab-7d8b70694554))
   (no_connect (at 154.178 100.076) (uuid 324f7d80-c97f-465c-b561-cad49f23bab0))
   (no_connect (at 203.073 93.726) (uuid 34e235a6-af4a-4bc4-ad78-df0547b58ed0))
-  (no_connect (at 154.178 130.556) (uuid 34e43641-7cc1-4dac-bc88-0145bb7e580b))
   (no_connect (at 52.578 115.316) (uuid 3521280e-daa8-4e20-b853-d65cddd9c883))
   (no_connect (at 355.092 142.748) (uuid 3d5d3dda-9ea8-4207-a0c2-5d38dd0f6901))
   (no_connect (at 355.092 170.688) (uuid 43334afb-ce80-4fba-bec3-e53648e8dc37))
@@ -3040,6 +3229,7 @@
   (no_connect (at 355.092 175.768) (uuid 5691f4cb-dd1b-4afc-898f-f882ff2188ce))
   (no_connect (at 154.178 74.676) (uuid 5b6e2195-11a9-4a3c-bfea-2880fd2bc4b0))
   (no_connect (at 355.092 168.148) (uuid 5b903e1a-f7db-45e4-b233-58ae702e0022))
+  (no_connect (at 181.864 157.099) (uuid 64f52633-870e-470f-915b-f11d7b75b49f))
   (no_connect (at 203.073 78.486) (uuid 67455b80-435a-4d79-8d05-fcbeb353ba71))
   (no_connect (at 154.178 135.636) (uuid 674d98a7-0b54-4252-93d3-7a7daf7d31ec))
   (no_connect (at 154.178 158.496) (uuid 6eed9e63-915a-431e-8db4-2cadf20f3fc9))
@@ -3049,8 +3239,8 @@
   (no_connect (at 304.673 134.366) (uuid 723868ec-05a1-46af-a86c-5ad1d9d55e0c))
   (no_connect (at 355.092 81.788) (uuid 785f1c0f-ebb1-4a45-9094-c8bcf1a46983))
   (no_connect (at 355.092 193.548) (uuid 7871e6f8-cb23-4edc-9bef-01009ee0a3b9))
-  (no_connect (at 304.673 152.146) (uuid 79b21875-0a94-4d6f-aa97-2ac02aa97035))
   (no_connect (at 154.178 196.596) (uuid 7cc99d29-8b5b-4dc0-9f8f-a0c8ef832265))
+  (no_connect (at 171.704 157.099) (uuid 83e080d6-0a6e-4580-9ca8-c73c544d6848))
   (no_connect (at 52.578 194.056) (uuid 86d91f65-4cb8-467b-87aa-69eadb922779))
   (no_connect (at 52.578 140.716) (uuid 8bdccd00-d297-4f0a-9709-e6dce3ec1738))
   (no_connect (at 355.092 84.328) (uuid 8d0d7c92-d835-40bb-a736-630afe16e513))
@@ -3064,7 +3254,6 @@
   (no_connect (at 154.178 105.156) (uuid 9e50df16-e735-4670-ab45-e2ae39aa968e))
   (no_connect (at 355.092 178.308) (uuid a81cea93-bad0-4950-9931-44b38dbc7f3a))
   (no_connect (at 203.073 91.186) (uuid a882b642-144e-4da2-a310-304ed9560e53))
-  (no_connect (at 154.178 128.016) (uuid a8fc9104-df44-477d-8f33-6927af74b5fe))
   (no_connect (at 203.073 75.946) (uuid ac44ca42-6a80-40d9-805c-c23e0507ca2f))
   (no_connect (at 355.092 196.088) (uuid ad37270f-c1c2-464e-9c2a-cdcc2572497e))
   (no_connect (at 355.092 191.008) (uuid af903bf9-19d0-4a79-96b9-a1faa7e08e2d))
@@ -3086,7 +3275,6 @@
   (no_connect (at 355.092 127.508) (uuid d2888219-6939-45ce-bd4d-d68537fe02f3))
   (no_connect (at 355.092 112.268) (uuid d6190652-a428-4333-a20c-7f7a5ea72988))
   (no_connect (at 355.092 86.868) (uuid dede8bef-071d-4e39-bf7e-793d19d794f6))
-  (no_connect (at 154.178 133.096) (uuid e05d965c-af70-4f5e-85da-71aaacf563f4))
   (no_connect (at 154.178 161.036) (uuid e2a6869e-9b50-45ef-bf94-12c5a383c871))
   (no_connect (at 304.673 101.346) (uuid e6a29fb4-1d17-4a59-aebe-fdde2cb36a83))
   (no_connect (at 154.178 171.196) (uuid ef50fe7b-ec40-43d7-bdb3-02e11703d163))
@@ -3134,6 +3322,14 @@
   (wire (pts (xy 484.632 148.082) (xy 490.22 148.082))
     (stroke (width 0) (type default))
     (uuid 04f4f214-c4ee-44b1-807a-9eeec14a0743)
+  )
+  (wire (pts (xy 168.021 149.479) (xy 171.704 149.479))
+    (stroke (width 0) (type default))
+    (uuid 054c9171-e81b-4ec8-bea6-c425a1a44e4a)
+  )
+  (wire (pts (xy 154.178 186.436) (xy 168.021 186.436))
+    (stroke (width 0) (type default))
+    (uuid 05527343-892a-4298-9577-2f2cac15d709)
   )
   (wire (pts (xy 546.608 145.542) (xy 546.608 148.082))
     (stroke (width 0) (type default))
@@ -3187,6 +3383,10 @@
     (stroke (width 0) (type default))
     (uuid 1238b483-330b-4489-bcf3-94e4bcc278e1)
   )
+  (wire (pts (xy 304.8 152.146) (xy 304.673 152.146))
+    (stroke (width 0) (type default))
+    (uuid 12cbc6fa-ffcc-4319-9220-fa1c71835a53)
+  )
   (wire (pts (xy 247.142 261.366) (xy 247.142 259.715))
     (stroke (width 0) (type default))
     (uuid 1302d934-20ac-481b-a4cf-2e497592e4b5)
@@ -3194,6 +3394,10 @@
   (wire (pts (xy 546.608 150.622) (xy 546.608 153.162))
     (stroke (width 0) (type default))
     (uuid 137768be-0142-44f5-8193-716ca47665d3)
+  )
+  (wire (pts (xy 167.259 115.697) (xy 171.45 115.697))
+    (stroke (width 0) (type default))
+    (uuid 13883e0b-f39e-4b5b-8227-9e3114d125e2)
   )
   (wire (pts (xy 221.107 370.459) (xy 228.219 370.459))
     (stroke (width 0) (type default))
@@ -3271,10 +3475,6 @@
     (stroke (width 0) (type default))
     (uuid 1ff8fb70-c72b-453c-add7-0b5217a1a191)
   )
-  (wire (pts (xy 554.482 261.747) (xy 554.863 261.747))
-    (stroke (width 0) (type default))
-    (uuid 20366b8f-5e75-41ae-88a3-c55e234e3da9)
-  )
   (wire (pts (xy 546.608 135.382) (xy 546.608 137.922))
     (stroke (width 0) (type default))
     (uuid 20ad16e0-41e9-431a-b53b-867428be12a0)
@@ -3319,6 +3519,10 @@
     (stroke (width 0) (type default))
     (uuid 260e4fff-8dad-4324-b5da-63f733e1d517)
   )
+  (wire (pts (xy 66.548 297.942) (xy 66.548 299.466))
+    (stroke (width 0) (type default))
+    (uuid 26239944-11e4-414f-a13f-edd41c46178d)
+  )
   (wire (pts (xy 524.129 306.705) (xy 531.749 306.705))
     (stroke (width 0) (type default))
     (uuid 264bccb6-914e-41ca-a78e-44fc4d8eeab4)
@@ -3359,6 +3563,10 @@
     (stroke (width 0) (type default))
     (uuid 29be6cc5-09dd-43aa-8c16-f805fbecf5a2)
   )
+  (wire (pts (xy 154.178 153.416) (xy 162.687 153.416))
+    (stroke (width 0) (type default))
+    (uuid 29ca0da9-5904-4281-aacb-06fc59232278)
+  )
   (wire (pts (xy 83.058 371.348) (xy 90.551 371.348))
     (stroke (width 0) (type default))
     (uuid 29e4add5-9c0c-4a60-8e68-ee650b1b27b2)
@@ -3387,6 +3595,10 @@
     (stroke (width 0) (type default))
     (uuid 2d916aa4-3b77-4745-85f1-3e949b145322)
   )
+  (wire (pts (xy 154.178 183.896) (xy 170.18 183.896))
+    (stroke (width 0) (type default))
+    (uuid 2dd90f41-39a6-4fc5-9274-652225ff259b)
+  )
   (wire (pts (xy 351.917 248.285) (xy 365.76 248.285))
     (stroke (width 0) (type default))
     (uuid 2ec444ca-3403-44cf-afaf-a6d1e6f0492a)
@@ -3410,6 +3622,10 @@
   (wire (pts (xy 402.463 254.635) (xy 406.908 254.635))
     (stroke (width 0) (type default))
     (uuid 32758b0c-6e6c-4ae7-a9a6-23d16579d1f9)
+  )
+  (wire (pts (xy 165.735 130.302) (xy 172.085 130.302))
+    (stroke (width 0) (type default))
+    (uuid 32bfa8ef-32dd-4577-b7fd-162ae61096fb)
   )
   (wire (pts (xy 484.632 165.862) (xy 490.22 165.862))
     (stroke (width 0) (type default))
@@ -3475,6 +3691,10 @@
     (stroke (width 0) (type default))
     (uuid 3c181b97-3d1e-4085-a8cf-e02416613674)
   )
+  (wire (pts (xy 184.785 115.697) (xy 181.61 115.697))
+    (stroke (width 0) (type default))
+    (uuid 3c6f9f1c-f111-4e32-b030-803f6faa9eb7)
+  )
   (wire (pts (xy 184.658 355.219) (xy 192.405 355.219))
     (stroke (width 0) (type default))
     (uuid 3cbd6bc0-0357-4ce7-9167-29ab414869fd)
@@ -3499,6 +3719,10 @@
     (stroke (width 0) (type default))
     (uuid 3fbeba58-97ae-4cff-8290-9bf505c37041)
   )
+  (wire (pts (xy 154.178 166.116) (xy 169.672 166.116))
+    (stroke (width 0) (type default))
+    (uuid 40951cf5-9923-4e10-a984-eacc4303fcba)
+  )
   (wire (pts (xy 166.116 360.934) (xy 166.116 355.092))
     (stroke (width 0) (type default))
     (uuid 4163b8d9-4e30-4b53-b2ca-a0ac6d052ebc)
@@ -3507,6 +3731,10 @@
     (stroke (width 0) (type default))
     (uuid 41681373-d406-41ac-9641-263ea90bbd45)
   )
+  (wire (pts (xy 66.548 299.466) (xy 58.928 299.466))
+    (stroke (width 0) (type default))
+    (uuid 44450c69-1c11-4764-a67a-a37bf64f13fa)
+  )
   (wire (pts (xy 347.091 243.205) (xy 354.076 243.205))
     (stroke (width 0) (type default))
     (uuid 4502b1e6-b3c3-4d41-b41c-6a0342dd9304)
@@ -3514,6 +3742,14 @@
   (wire (pts (xy 141.351 237.744) (xy 141.351 242.316))
     (stroke (width 0) (type default))
     (uuid 45c7d6ba-be8e-4519-8a81-ceae7fa81653)
+  )
+  (wire (pts (xy 167.259 122.936) (xy 154.178 122.936))
+    (stroke (width 0) (type default))
+    (uuid 46b59c40-b525-4b76-a662-4e371e5b427a)
+  )
+  (wire (pts (xy 168.148 125.476) (xy 154.178 125.476))
+    (stroke (width 0) (type default))
+    (uuid 46ef0abe-67a3-4fba-8cea-52a25fd8b041)
   )
   (wire (pts (xy 45.593 368.3) (xy 45.593 370.586))
     (stroke (width 0) (type default))
@@ -3594,6 +3830,10 @@
   (wire (pts (xy 538.353 250.571) (xy 561.848 250.571))
     (stroke (width 0) (type default))
     (uuid 539031fd-05bd-47b0-95a2-a4e0d0ffc4dd)
+  )
+  (wire (pts (xy 169.672 166.116) (xy 169.672 152.019))
+    (stroke (width 0) (type default))
+    (uuid 539e3178-68e9-41bf-a981-16f431ecff5c)
   )
   (wire (pts (xy 484.632 125.222) (xy 484.632 127.762))
     (stroke (width 0) (type default))
@@ -3703,6 +3943,10 @@
     (stroke (width 0) (type default))
     (uuid 61a2787f-ad30-4114-b8e2-1174adf5434b)
   )
+  (wire (pts (xy 157.48 191.516) (xy 154.178 191.516))
+    (stroke (width 0) (type default))
+    (uuid 621bacba-9184-4363-ba6a-ea317f8f4a7a)
+  )
   (wire (pts (xy 67.818 48.895) (xy 67.818 50.419))
     (stroke (width 0) (type default))
     (uuid 627b1f2b-0d04-471b-ab05-bd729bd8640e)
@@ -3751,6 +3995,10 @@
     (stroke (width 0) (type default))
     (uuid 6a70ab54-81c5-4e31-85ec-f6c456cc303f)
   )
+  (wire (pts (xy 166.878 135.382) (xy 172.085 135.382))
+    (stroke (width 0) (type default))
+    (uuid 6acd4411-2203-427a-90a8-110e7515494e)
+  )
   (wire (pts (xy 541.02 160.782) (xy 546.608 160.782))
     (stroke (width 0) (type default))
     (uuid 6b456d0f-ebbf-4b92-930d-12e850ce5707)
@@ -3758,6 +4006,10 @@
   (wire (pts (xy 546.608 69.342) (xy 546.608 71.882))
     (stroke (width 0) (type default))
     (uuid 6b81dcf0-d50c-4583-8200-e10542289520)
+  )
+  (wire (pts (xy 166.878 178.816) (xy 166.878 135.382))
+    (stroke (width 0) (type default))
+    (uuid 6b9b732f-02ec-4f65-9000-142da43f758e)
   )
   (wire (pts (xy 250.063 355.219) (xy 257.556 355.219))
     (stroke (width 0) (type default))
@@ -3798,6 +4050,10 @@
   (wire (pts (xy 541.02 143.002) (xy 546.608 143.002))
     (stroke (width 0) (type default))
     (uuid 70c57941-d33d-4dc1-a002-687c7e6872a8)
+  )
+  (wire (pts (xy 162.687 153.416) (xy 162.687 132.842))
+    (stroke (width 0) (type default))
+    (uuid 710efb59-ea08-4337-8699-53b6a5a72bb3)
   )
   (wire (pts (xy 97.155 355.092) (xy 104.267 355.092))
     (stroke (width 0) (type default))
@@ -3871,6 +4127,10 @@
     (stroke (width 0) (type default))
     (uuid 78530fba-4bf5-4808-98cc-a2c20c4eb555)
   )
+  (wire (pts (xy 168.148 111.379) (xy 168.148 125.476))
+    (stroke (width 0) (type default))
+    (uuid 7896b37e-8b57-4af8-ad6b-74a005d972a8)
+  )
   (wire (pts (xy 286.893 49.403) (xy 286.893 53.086))
     (stroke (width 0) (type default))
     (uuid 78bd7eab-7515-4a7c-af50-0a301dec1060)
@@ -3878,6 +4138,10 @@
   (wire (pts (xy 484.632 127.762) (xy 484.632 130.302))
     (stroke (width 0) (type default))
     (uuid 7b649630-c468-4f22-8dc4-eba89ad7d3c5)
+  )
+  (wire (pts (xy 164.211 127.762) (xy 164.211 155.956))
+    (stroke (width 0) (type default))
+    (uuid 7bad5054-d887-4746-8ea6-58512343deaa)
   )
   (wire (pts (xy 541.02 92.202) (xy 546.608 92.202))
     (stroke (width 0) (type default))
@@ -3935,7 +4199,11 @@
     (stroke (width 0) (type default))
     (uuid 8237a4d0-8b26-4dd6-990e-a9da124a5e52)
   )
-  (wire (pts (xy 554.863 264.287) (xy 554.863 269.367))
+  (wire (pts (xy 154.178 181.356) (xy 165.735 181.356))
+    (stroke (width 0) (type default))
+    (uuid 824b3073-251e-4f27-a63a-695e78216b5d)
+  )
+  (wire (pts (xy 554.863 245.491) (xy 554.863 269.367))
     (stroke (width 0) (type default))
     (uuid 82db4992-1de8-46e9-80cd-efbb8a4c52c5)
   )
@@ -3946,6 +4214,10 @@
   (wire (pts (xy 51.308 283.718) (xy 51.308 290.068))
     (stroke (width 0) (type default))
     (uuid 8381b195-c23f-4cd7-947e-fb23848c36e3)
+  )
+  (wire (pts (xy 162.687 132.842) (xy 172.085 132.842))
+    (stroke (width 0) (type default))
+    (uuid 844cf357-71de-4b34-8991-3eeab05cb997)
   )
   (wire (pts (xy 131.572 226.441) (xy 131.572 229.87))
     (stroke (width 0) (type default))
@@ -3958,6 +4230,10 @@
   (wire (pts (xy 235.331 355.219) (xy 235.331 359.41))
     (stroke (width 0) (type default))
     (uuid 87cc4739-aafb-447d-8b30-2a2480d4fde5)
+  )
+  (wire (pts (xy 154.178 178.816) (xy 166.878 178.816))
+    (stroke (width 0) (type default))
+    (uuid 89486130-8b4f-43bb-be1e-a8ac22014976)
   )
   (wire (pts (xy 484.632 137.922) (xy 490.22 137.922))
     (stroke (width 0) (type default))
@@ -3991,6 +4267,10 @@
     (stroke (width 0) (type default))
     (uuid 8bf8e6a9-4e21-4049-83ef-8f243a3f7e0a)
   )
+  (wire (pts (xy 170.18 154.559) (xy 171.704 154.559))
+    (stroke (width 0) (type default))
+    (uuid 8c1e7f36-b7d1-4106-a6d9-2186d20d12ac)
+  )
   (wire (pts (xy 192.405 355.219) (xy 192.405 358.902))
     (stroke (width 0) (type default))
     (uuid 8c4334d6-d1e8-4702-8e3d-b5b062160f44)
@@ -3998,6 +4278,10 @@
   (wire (pts (xy 45.593 370.586) (xy 49.022 370.586))
     (stroke (width 0) (type default))
     (uuid 8c5e94df-ad1a-4e3d-b57f-cd24204e9efc)
+  )
+  (wire (pts (xy 169.037 118.237) (xy 169.037 176.276))
+    (stroke (width 0) (type default))
+    (uuid 8ce99148-e0fd-4691-822e-bb8c92adf70d)
   )
   (wire (pts (xy 18.415 358.902) (xy 18.415 360.172))
     (stroke (width 0) (type default))
@@ -4059,6 +4343,10 @@
     (stroke (width 0) (type default))
     (uuid 94f867d1-e63f-4829-9f6e-43c94569d0b1)
   )
+  (wire (pts (xy 169.164 110.236) (xy 169.164 113.157))
+    (stroke (width 0) (type default))
+    (uuid 950557de-de0d-40e3-8879-d411553aa0bf)
+  )
   (wire (pts (xy 131.318 52.197) (xy 133.858 52.197))
     (stroke (width 0) (type default))
     (uuid 952c1f09-fea9-43ee-8123-c78047905313)
@@ -4083,10 +4371,6 @@
     (stroke (width 0) (type default))
     (uuid 982f6de1-5272-4825-be91-21afef3f68d0)
   )
-  (wire (pts (xy 554.863 264.287) (xy 554.482 264.287))
-    (stroke (width 0) (type default))
-    (uuid 984f4725-15f8-4809-9cf9-a235f2b6d7e8)
-  )
   (wire (pts (xy 424.434 233.934) (xy 428.879 233.934))
     (stroke (width 0) (type default))
     (uuid 9855d42e-90a1-4ed7-ad1d-33cd86c377cf)
@@ -4106,6 +4390,10 @@
   (wire (pts (xy 242.443 355.219) (xy 250.063 355.219))
     (stroke (width 0) (type default))
     (uuid 9952de99-a86d-4548-af20-27bfa29bac1b)
+  )
+  (wire (pts (xy 170.688 111.379) (xy 170.688 110.617))
+    (stroke (width 0) (type default))
+    (uuid 9a6ffd64-fb90-4370-811d-4f2f1859d319)
   )
   (wire (pts (xy 402.463 247.015) (xy 414.274 247.015))
     (stroke (width 0) (type default))
@@ -4167,6 +4455,10 @@
     (stroke (width 0) (type default))
     (uuid a0971f22-7975-47c0-a6ff-9884947c0706)
   )
+  (wire (pts (xy 169.164 110.236) (xy 154.178 110.236))
+    (stroke (width 0) (type default))
+    (uuid a0a7a3ec-c7d5-4a9d-b032-4d775a36e473)
+  )
   (wire (pts (xy 251.587 248.031) (xy 247.142 248.031))
     (stroke (width 0) (type default))
     (uuid a0b234f2-9ba7-4d61-83ab-2829dea7d9f5)
@@ -4187,13 +4479,17 @@
     (stroke (width 0) (type default))
     (uuid a3b62079-5e4d-4868-9338-8ffff0ecdd95)
   )
-  (wire (pts (xy 554.863 245.491) (xy 554.863 261.747))
+  (wire (pts (xy 165.735 181.356) (xy 165.735 130.302))
     (stroke (width 0) (type default))
-    (uuid a4bfc6a4-a091-4f05-a17a-0e53a86dfbbd)
+    (uuid a50e4943-5ca2-49c7-a0e1-cd10273f9e32)
   )
   (wire (pts (xy 370.332 48.768) (xy 372.872 48.768))
     (stroke (width 0) (type default))
     (uuid a52ce559-4b66-440f-96d1-ef0f2b33508b)
+  )
+  (wire (pts (xy 184.785 113.157) (xy 181.61 113.157))
+    (stroke (width 0) (type default))
+    (uuid a5cb97ff-5fae-4a74-895c-111b57d137f4)
   )
   (wire (pts (xy 546.608 153.162) (xy 546.608 155.702))
     (stroke (width 0) (type default))
@@ -4239,6 +4535,10 @@
     (stroke (width 0) (type default))
     (uuid a9f598d8-c142-46b4-b5f1-36d85fd2ee3f)
   )
+  (wire (pts (xy 184.785 118.237) (xy 181.61 118.237))
+    (stroke (width 0) (type default))
+    (uuid aa80e385-a8e0-487f-8bfc-209ba984d610)
+  )
   (wire (pts (xy 490.22 107.442) (xy 484.632 107.442))
     (stroke (width 0) (type default))
     (uuid aa9af1dd-d952-4f36-808a-d4475944428c)
@@ -4250,6 +4550,10 @@
   (wire (pts (xy 97.155 355.092) (xy 97.155 358.394))
     (stroke (width 0) (type default))
     (uuid ac6d19c6-1a3b-484e-9280-ca855a40a522)
+  )
+  (wire (pts (xy 69.596 299.466) (xy 66.548 299.466))
+    (stroke (width 0) (type default))
+    (uuid ac7d77e5-cb1a-41a3-8717-0424f7c23231)
   )
   (wire (pts (xy 221.107 367.03) (xy 221.107 370.459))
     (stroke (width 0) (type default))
@@ -4319,6 +4623,10 @@
     (stroke (width 0) (type default))
     (uuid b56a6e9d-c5a0-4af0-8334-5bafd8e8c8c9)
   )
+  (wire (pts (xy 169.672 152.019) (xy 171.704 152.019))
+    (stroke (width 0) (type default))
+    (uuid b60ee887-ad1e-40a0-81df-06c579103b30)
+  )
   (wire (pts (xy 147.193 355.092) (xy 147.193 359.664))
     (stroke (width 0) (type default))
     (uuid b771107f-fe35-4f58-80ee-74dc3e94e68d)
@@ -4339,6 +4647,10 @@
     (stroke (width 0) (type default))
     (uuid bb0f8a6e-e740-4318-ae0c-befaf55ff13e)
   )
+  (wire (pts (xy 196.469 279.273) (xy 195.58 279.273))
+    (stroke (width 0) (type default))
+    (uuid bba6c15c-3276-4ad6-85a9-11392d3017d6)
+  )
   (wire (pts (xy 257.556 370.459) (xy 264.668 370.459))
     (stroke (width 0) (type default))
     (uuid bc90ab3a-94c5-40bc-a2b1-2d1cb154ee3c)
@@ -4358,6 +4670,10 @@
   (wire (pts (xy 213.995 355.219) (xy 213.995 359.283))
     (stroke (width 0) (type default))
     (uuid bdb79554-39dc-42c6-93f4-ad4acb536658)
+  )
+  (wire (pts (xy 169.037 118.237) (xy 171.45 118.237))
+    (stroke (width 0) (type default))
+    (uuid bdfca160-e10b-401d-af8c-8ad70ccb1031)
   )
   (wire (pts (xy 184.658 365.887) (xy 184.658 370.459))
     (stroke (width 0) (type default))
@@ -4391,6 +4707,10 @@
     (stroke (width 0) (type default))
     (uuid c2529635-9826-4467-bef6-7f5c482efd5e)
   )
+  (wire (pts (xy 169.037 176.276) (xy 154.178 176.276))
+    (stroke (width 0) (type default))
+    (uuid c2b09f87-99b5-4dae-80db-e6d1de7a6500)
+  )
   (wire (pts (xy 18.415 370.586) (xy 25.273 370.586))
     (stroke (width 0) (type default))
     (uuid c2b4cc6f-4da3-453f-94bb-15c693edd017)
@@ -4402,6 +4722,10 @@
   (wire (pts (xy 546.608 155.702) (xy 546.608 158.242))
     (stroke (width 0) (type default))
     (uuid c32b9c99-2679-404c-9612-4cf0cc3db828)
+  )
+  (wire (pts (xy 167.259 122.936) (xy 167.259 115.697))
+    (stroke (width 0) (type default))
+    (uuid c37fd731-e999-486d-be55-0e748448c223)
   )
   (wire (pts (xy 541.02 148.082) (xy 546.608 148.082))
     (stroke (width 0) (type default))
@@ -4527,6 +4851,10 @@
     (stroke (width 0) (type default))
     (uuid d5b35046-203c-4e0a-9d42-62e4ee32eaf4)
   )
+  (wire (pts (xy 169.164 113.157) (xy 171.45 113.157))
+    (stroke (width 0) (type default))
+    (uuid d5df2ffd-3b4c-4215-90b8-43d88e33237e)
+  )
   (wire (pts (xy 289.814 367.284) (xy 289.814 370.459))
     (stroke (width 0) (type default))
     (uuid d660040f-60d3-4c2c-8221-460de25aecb3)
@@ -4542,6 +4870,10 @@
   (wire (pts (xy 410.845 237.363) (xy 410.845 257.175))
     (stroke (width 0) (type default))
     (uuid d8e95f35-2bfe-4d29-be3c-76f3a78f609a)
+  )
+  (wire (pts (xy 168.148 111.379) (xy 170.688 111.379))
+    (stroke (width 0) (type default))
+    (uuid d927be01-93dc-450a-875d-21d58edb297f)
   )
   (wire (pts (xy 484.632 120.142) (xy 490.22 120.142))
     (stroke (width 0) (type default))
@@ -4579,6 +4911,10 @@
     (stroke (width 0) (type default))
     (uuid dd740b49-d655-4e38-a974-f2130a50d3ec)
   )
+  (wire (pts (xy 168.021 186.436) (xy 168.021 149.479))
+    (stroke (width 0) (type default))
+    (uuid dd8fabff-ba64-4fc7-ac2c-d737dfd12398)
+  )
   (wire (pts (xy 484.632 153.162) (xy 484.632 155.702))
     (stroke (width 0) (type default))
     (uuid ddd912dd-deb2-4749-8769-83562abe6083)
@@ -4586,6 +4922,10 @@
   (wire (pts (xy 156.972 371.348) (xy 156.972 367.792))
     (stroke (width 0) (type default))
     (uuid de490620-5863-4350-ba35-4833f355460b)
+  )
+  (wire (pts (xy 170.688 110.617) (xy 171.45 110.617))
+    (stroke (width 0) (type default))
+    (uuid de7ee0cd-c3b1-4618-a99c-d47de6d47785)
   )
   (wire (pts (xy 44.958 299.466) (xy 43.307 299.466))
     (stroke (width 0) (type default))
@@ -4595,10 +4935,6 @@
     (stroke (width 0) (type default))
     (uuid e121118a-af87-4dc7-8931-ab57b9ced7bf)
   )
-  (wire (pts (xy 554.863 245.491) (xy 554.863 243.078))
-    (stroke (width 0) (type default))
-    (uuid e18e5a69-7da7-4194-bab6-1d0f982353dc)
-  )
   (wire (pts (xy 354.076 243.205) (xy 354.076 225.806))
     (stroke (width 0) (type default))
     (uuid e18f609f-b73f-49d1-bc22-d3f667197e7c)
@@ -4607,9 +4943,17 @@
     (stroke (width 0) (type default))
     (uuid e2324ac3-4503-4976-af34-77fda2896de3)
   )
+  (wire (pts (xy 184.785 110.617) (xy 181.61 110.617))
+    (stroke (width 0) (type default))
+    (uuid e2af8140-67d9-4c2b-9569-e21112e85af6)
+  )
   (wire (pts (xy 547.37 253.111) (xy 545.973 253.111))
     (stroke (width 0) (type default))
     (uuid e310d409-9907-43f9-9e8b-4aa56223dc62)
+  )
+  (wire (pts (xy 157.48 188.976) (xy 154.178 188.976))
+    (stroke (width 0) (type default))
+    (uuid e3572c52-a129-4fca-8cf3-a7d9af703d76)
   )
   (wire (pts (xy 289.433 49.403) (xy 289.433 53.086))
     (stroke (width 0) (type default))
@@ -4647,6 +4991,10 @@
     (stroke (width 0) (type default))
     (uuid e6512218-e6de-4783-ac4d-d87312a486da)
   )
+  (wire (pts (xy 172.085 127.762) (xy 164.211 127.762))
+    (stroke (width 0) (type default))
+    (uuid e65dc9d5-47f3-4ad2-98f2-f5bdfd342ec3)
+  )
   (wire (pts (xy 118.237 367.03) (xy 118.237 371.348))
     (stroke (width 0) (type default))
     (uuid e7a98339-0f82-484d-bf82-47133fbec6e6)
@@ -4667,6 +5015,10 @@
     (stroke (width 0) (type default))
     (uuid e9ba33f9-5bb9-41f6-be8a-acbb77da48b7)
   )
+  (wire (pts (xy 170.18 183.896) (xy 170.18 154.559))
+    (stroke (width 0) (type default))
+    (uuid eaac7c14-bcb2-47f8-bcda-6fd779bb3761)
+  )
   (wire (pts (xy 372.872 48.768) (xy 375.412 48.768))
     (stroke (width 0) (type default))
     (uuid eb01c14d-be9e-4be3-8620-8d8d46adc0a3)
@@ -4682,6 +5034,10 @@
   (wire (pts (xy 184.658 370.459) (xy 192.405 370.459))
     (stroke (width 0) (type default))
     (uuid ee5751de-3bb5-432f-8be3-21aa73044e24)
+  )
+  (wire (pts (xy 66.548 285.75) (xy 66.548 290.322))
+    (stroke (width 0) (type default))
+    (uuid ee7b5a2e-c65d-4de4-a0c6-423be6570a97)
   )
   (wire (pts (xy 111.252 366.903) (xy 111.252 371.348))
     (stroke (width 0) (type default))
@@ -4751,6 +5107,10 @@
     (stroke (width 0) (type default))
     (uuid f8629b53-238e-4f39-9ae1-fd605b1efc37)
   )
+  (wire (pts (xy 154.178 155.956) (xy 164.211 155.956))
+    (stroke (width 0) (type default))
+    (uuid f99949d3-b934-4df8-b4e1-27e9a2910522)
+  )
   (wire (pts (xy 280.924 370.459) (xy 271.907 370.459))
     (stroke (width 0) (type default))
     (uuid fa98573e-67e3-417f-a43f-b00002008856)
@@ -4799,13 +5159,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "DSD_B" (shape bidirectional) (at 154.178 183.896 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 02921c0e-b400-43a2-9ce7-24574d014d6f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 164.2616 183.896 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "DS26" (shape input) (at 304.673 111.506 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 05e60799-10fd-4c5a-950f-7521cc218052)
@@ -4818,6 +5171,13 @@
     (uuid 07059b4a-e96e-40c1-ae7c-fc66ebea52be)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 347.3292 152.908 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "DSD_CLK" (shape bidirectional) (at 181.864 149.479 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 0a57cc01-df11-4197-90f3-948d5a0df712)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 194.2457 149.479 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "IO11" (shape bidirectional) (at 52.578 122.936 180) (fields_autoplaced)
@@ -5030,10 +5390,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "DSD_B_N" (shape bidirectional) (at 154.178 191.516 0) (fields_autoplaced)
+  (global_label "DSD_A" (shape bidirectional) (at 181.864 152.019 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 35f034b0-6b3f-40ea-aa06-bdc2361a79f4)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.5597 191.516 0)
+    (uuid 32b93a31-9f23-4739-b4e0-d4cb64d72ba5)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 191.7662 152.019 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "RCLK_F" (shape bidirectional) (at 182.245 132.842 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 335187df-3af3-4a4c-825f-267825dbd1a0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 193.2358 132.842 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -5065,6 +5432,13 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "I2S_IN_LRCLK" (shape input) (at 195.58 271.653 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 38a74fec-7738-4999-9eb5-e4320dfd7ea4)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 211.3257 271.653 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "NWAIT" (shape input) (at 304.673 78.486 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 394e2349-5307-4889-bf84-112afbfca4f9)
@@ -5077,6 +5451,13 @@
     (uuid 3a5a0b9e-692b-408d-9e27-75bc73638d91)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 337.653 117.348 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "DSD_A_N" (shape bidirectional) (at 165.1 188.976 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 3c029ce2-07bf-4cc5-a0b6-f885f46ab0a1)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 177.3003 188.976 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "DSD_ON" (shape output) (at 52.578 176.276 180) (fields_autoplaced)
@@ -5107,6 +5488,13 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "I2S_IN_CLK" (shape input) (at 195.58 274.193 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 400a0c7d-17d7-4d06-8de5-374f45318924)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 209.0276 274.193 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "LEDF4" (shape output) (at 52.578 158.496 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 40bb6a54-3b45-4841-a748-ffaf8dd99751)
@@ -5125,13 +5513,6 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 44980d7e-b9cc-4e0b-bcd7-94eabdba140a)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 312.5567 180.086 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "BCLK_L_F" (shape bidirectional) (at 154.178 110.236 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 452a948a-7d74-4d64-a306-cccf84b4bb6d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 167.1645 110.236 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -5156,6 +5537,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "I2S_IN_LRCLK" (shape input) (at 154.178 128.016 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 4888e6d0-dd2b-4102-8a9d-8206cccc513f)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.9237 128.016 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "IO0" (shape bidirectional) (at 52.578 161.036 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 49a0e086-2152-449c-b401-6e5e92989332)
@@ -5167,6 +5555,20 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4e45552c-0d9c-4e2c-82bd-1b118ef9f487)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 165.4711 163.576 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "DATA_P_L_F" (shape bidirectional) (at 184.785 110.617 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 5659bbf1-d650-47dd-8a07-a8f13848f889)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 199.5858 110.617 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "DATA_N_L_F" (shape bidirectional) (at 184.785 118.237 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 583907a9-63f7-4659-abc3-1adbf08b8727)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 199.6463 118.237 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -5184,32 +5586,11 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "DSD_A" (shape bidirectional) (at 154.178 166.116 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 5f21d9f8-5697-4de4-ac1a-f9080a87c6d2)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 164.0802 166.116 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "BCLK_R_F" (shape bidirectional) (at 154.178 181.356 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 617de66c-2928-4930-9f69-30a511c7bae3)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 167.4064 181.356 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "COAX_FPGA_OUT" (shape input) (at 355.092 140.208 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 61f71f07-88d5-4461-8ee3-e87cab793978)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 336.9272 140.208 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "LCLK_F" (shape bidirectional) (at 154.178 122.936 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 6236cbca-91b5-46be-868c-18d207c1808e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 164.9269 122.936 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "LEDF3" (shape bidirectional) (at 52.578 166.116 180) (fields_autoplaced)
@@ -5275,6 +5656,13 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "BCLK_L_F" (shape bidirectional) (at 184.785 113.157 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 6bf864e5-cfdb-438a-8827-c69e7cd3a6bd)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 197.7715 113.157 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "F2" (shape input) (at 52.578 181.356 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 6c9e01ea-6308-4415-9ee6-60b71d94b661)
@@ -5303,10 +5691,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "DATA_N_L_F" (shape bidirectional) (at 154.178 176.276 0) (fields_autoplaced)
+  (global_label "I2S_IN_DATA" (shape input) (at 154.178 130.556 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 7a2849c5-4c69-497b-8a26-36ccc7e0e8d0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.0393 176.276 0)
+    (uuid 77a33eda-e10d-4bce-abaf-fe22ae063900)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 168.4723 130.556 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -5338,10 +5726,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "DATA_P_L_F" (shape bidirectional) (at 154.178 125.476 0) (fields_autoplaced)
+  (global_label "DSD_B" (shape bidirectional) (at 181.864 154.559 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 881d9ec0-000f-4e58-901d-628b3e837bf4)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 168.9788 125.476 0)
+    (uuid 861aa005-d18b-4782-a634-0b3c68f7406c)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 191.9476 154.559 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -5408,6 +5796,20 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "DATA_P_R_F" (shape bidirectional) (at 182.245 127.762 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid acc3db22-2f24-4501-b853-025c2b40b52a)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 197.2877 127.762 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "I2S_IN_CLK" (shape input) (at 154.178 133.096 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid ad63f13e-2e68-49ab-ab18-7e96849e09c6)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 167.6256 133.096 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "PJ11" (shape bidirectional) (at 52.578 145.796 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid ae45048f-86f1-4140-9c4a-542b34a2f232)
@@ -5441,13 +5843,6 @@
     (uuid b004dafc-8760-4191-b168-b0f4d77457e3)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 336.6249 114.808 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "DSD_CLK" (shape bidirectional) (at 154.178 186.436 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid b0122144-96e0-4131-ab19-4ba70835789d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.5597 186.436 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "DS8" (shape input) (at 304.673 106.426 0) (fields_autoplaced)
@@ -5492,10 +5887,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "RCLK_F" (shape bidirectional) (at 154.178 153.416 0) (fields_autoplaced)
+  (global_label "BCLK_R_F" (shape bidirectional) (at 182.245 130.302 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid bf635019-94b5-4c77-b9e6-cb560cac0a06)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 165.1688 153.416 0)
+    (uuid be313b32-6729-4070-b5b0-2e8e5923177e)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 195.4734 130.302 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -5604,6 +5999,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "IO12" (shape input) (at 66.548 285.75 90) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid d0c3595f-c41d-4227-8eda-5ac971a22802)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 66.548 278.4105 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "SPI3_SCK" (shape output) (at 355.092 147.828 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid d23631e5-84bb-4136-9dac-6b139c01c61b)
@@ -5611,10 +6013,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "XMOS_I2S_MCLK" (shape output) (at 66.548 299.466 0) (fields_autoplaced)
+  (global_label "XMOS_I2S_MCLK" (shape output) (at 77.216 299.466 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid d2dda10a-991e-457f-afa1-59f216056c13)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 84.7126 299.466 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 95.3806 299.466 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -5623,6 +6025,13 @@
     (uuid d4bdfd84-6d68-41a4-8a1b-b1e107707a6b)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 338.5601 119.888 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "LCLK_F" (shape bidirectional) (at 184.785 115.697 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid d4e32b46-5372-41d9-8059-b9f8ac898d4c)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 195.5339 115.697 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "CCLK" (shape input) (at 402.463 247.015 180) (fields_autoplaced)
@@ -5644,6 +6053,13 @@
     (uuid d7fd0fe4-645b-4947-b953-c767df66a48a)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 338.0763 122.428 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "I2S_IN_DATA" (shape input) (at 195.58 276.733 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid d91777ba-ce9f-43df-b65e-5ababb78580b)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 209.8743 276.733 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "OE_P_L_F" (shape input) (at 154.178 115.316 0) (fields_autoplaced)
@@ -5695,10 +6111,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "DATA_N_R_F" (shape bidirectional) (at 154.178 178.816 0) (fields_autoplaced)
+  (global_label "DSD_B_N" (shape bidirectional) (at 165.1 191.516 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid e58d5fd0-8144-4c20-be0a-4ac2b757700a)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.2812 178.816 0)
+    (uuid e58704f3-c0f8-4020-9879-ccb158652f53)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 177.4817 191.516 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -5707,6 +6123,13 @@
     (uuid e59f4cf9-fe56-40da-87e3-7b6d9c26ea93)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 44.732 143.256 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "PA11" (shape output) (at 304.8 152.146 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid e5b08df7-ffc8-4bfc-b159-578b4def0074)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 312.5628 152.146 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "CCLK" (shape input) (at 538.353 237.871 0) (fields_autoplaced)
@@ -5721,13 +6144,6 @@
     (uuid e6424b41-4444-48fd-9ec7-63ae6bbfb320)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 44.732 74.676 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "DATA_P_R_F" (shape bidirectional) (at 154.178 155.956 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid e6f1c87b-0ac0-4bfa-8043-9ddf06c73366)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.2207 155.956 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "DS17" (shape input) (at 304.673 167.386 0) (fields_autoplaced)
@@ -5793,10 +6209,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "DSD_A_N" (shape bidirectional) (at 154.178 188.976 0) (fields_autoplaced)
+  (global_label "DATA_N_R_F" (shape bidirectional) (at 182.245 135.382 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid f8da94d3-ad07-4ef3-b8ad-fd265fe6e828)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.3783 188.976 0)
+    (uuid fa76e04a-b75b-469e-8d15-39704050ef5c)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 197.3482 135.382 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -5869,7 +6285,7 @@
           (reference "#PWR017") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0356") (unit 1)
         )
@@ -5877,65 +6293,19 @@
     )
   )
 
-  (symbol (lib_id "Erdal:R_0603") (at 554.863 239.268 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0b771f1c-a165-439e-8e5e-16e41dc60b02)
-    (property "Reference" "R45" (at 557.403 237.998 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1k" (at 557.403 240.538 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 554.863 250.698 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 554.863 239.268 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8e02b61b-01f8-4828-a584-035204e7ffdd))
-    (pin "2" (uuid 3ada3aae-d83b-4ae0-96f2-aa0de8372ea5))
-    (instances
-      (project "EP4CGX30F23I7-REV"
-        (path "/05ff5191-099e-4938-ae17-b4b434dade8e/77a21ab2-3ab0-4ef5-a211-f1014b1f4890"
-          (reference "R45") (unit 1)
-        )
-      )
-      (project "XC7K325T"
-        (path "/ab18f6a5-d35a-46a2-b2f9-60ef84e0383a/546dd25f-0d41-4050-9f79-90a75bf06fe4"
-          (reference "R17") (unit 1)
-        )
-      )
-      (project "XC6SLX16-DDR3"
-        (path "/b4c4a2ec-a1ce-4df3-a38c-1b79ecc23268/3c5ce841-17d7-4acb-8fe6-51f2c469b504"
-          (reference "R16") (unit 1)
-        )
-      )
-      (project "ARTIX7_100"
-        (path "/eeda2d56-a9f7-4136-a082-8b14a479f2bd/fd040bb6-e0e4-44ea-b2eb-a16dd088db98"
-          (reference "R1") (unit 1)
-        )
-      )
-      (project "R2RDAC2026_REVIZE"
-        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
-          (reference "R265") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Erdal:R_0603") (at 62.738 299.466 90) (unit 1)
+  (symbol (lib_id "Erdal:R_0603") (at 73.406 299.466 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 10720311-a800-4116-ae28-aa7d2849b484)
-    (property "Reference" "R11" (at 64.516 299.339 90)
+    (property "Reference" "R11" (at 75.184 299.339 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "33" (at 63.627 297.561 90)
+    (property "Value" "33" (at 74.295 297.561 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "EP4CE_Footprint:R_0603_1608Metric" (at 74.168 299.466 0)
+    (property "Footprint" "EP4CE_Footprint:R_0603_1608Metric" (at 84.836 299.466 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 62.738 299.466 0)
+    (property "Datasheet" "~" (at 73.406 299.466 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 80a05b06-8044-4dc1-95fb-3a4f7e6da925))
@@ -5962,7 +6332,7 @@
           (reference "R15") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R48") (unit 1)
         )
@@ -6007,7 +6377,7 @@
           (reference "#PWR027") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0366") (unit 1)
         )
@@ -6054,7 +6424,7 @@
           (reference "R9") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R103") (unit 1)
         )
@@ -6099,7 +6469,7 @@
           (reference "#PWR024") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0363") (unit 1)
         )
@@ -6143,7 +6513,7 @@
           (reference "C14") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C208") (unit 1)
         )
@@ -6173,7 +6543,7 @@
           (reference "#PWR0270") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0413") (unit 1)
         )
@@ -6222,7 +6592,7 @@
           (reference "SW1") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "SW2") (unit 1)
         )
@@ -6262,7 +6632,7 @@
           (reference "#PWR0256") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0408") (unit 1)
         )
@@ -6335,9 +6705,41 @@
           (reference "D4") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "D21") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "PCM_Resistor_AKL:R_4x0402_Convex") (at 176.53 113.157 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1ac94147-7a75-48ff-b24a-3259e6c091e6)
+    (property "Reference" "RN1" (at 176.53 104.648 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "R_4x0402_Convex" (at 176.53 107.188 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "PCM_Resistor_SMD_AKL:R_Array_Convex_4x0402" (at 189.23 113.157 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 176.53 113.157 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7e035bfa-8a1d-420f-b19d-7f2888a18c72))
+    (pin "2" (uuid ec158a00-8d35-4335-995e-320ac6516640))
+    (pin "3" (uuid b810211f-2ced-48af-aef3-d634e4b05ce1))
+    (pin "4" (uuid 77563dc6-2594-4af4-8ed4-f3db4a7097ef))
+    (pin "5" (uuid d01bc2fe-d80b-4c40-8697-1bb2da6fd989))
+    (pin "6" (uuid 2e82de3d-1e81-4119-a56c-65f7bba2b6d7))
+    (pin "7" (uuid 7cc2c691-3a36-41e9-a254-821c8e041e82))
+    (pin "8" (uuid 095ad6c3-f173-4d2b-a40f-007439f0ca8c))
+    (instances
+      (project "R2RDAC2026_REVIZE_II"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
+          (reference "RN1") (unit 1)
         )
       )
     )
@@ -6408,7 +6810,7 @@
           (reference "D3") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "D20") (unit 1)
         )
@@ -6456,7 +6858,7 @@
           (reference "#PWR095") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR067") (unit 1)
         )
@@ -6502,7 +6904,7 @@
           (reference "R7") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R57") (unit 1)
         )
@@ -6547,7 +6949,7 @@
           (reference "#PWR0282") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0375") (unit 1)
         )
@@ -6588,7 +6990,7 @@
           (reference "C16") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C209") (unit 1)
         )
@@ -6636,7 +7038,7 @@
           (reference "#PWR014") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0353") (unit 1)
         )
@@ -6683,7 +7085,7 @@
           (reference "R21") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R104") (unit 1)
         )
@@ -6723,7 +7125,7 @@
           (reference "#PWR0249") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0360") (unit 1)
         )
@@ -6767,7 +7169,7 @@
           (reference "C8") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C204") (unit 1)
         )
@@ -6811,7 +7213,7 @@
           (reference "C33") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C233") (unit 1)
         )
@@ -7164,7 +7566,7 @@
           (reference "U1") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "U20") (unit 1)
         )
@@ -7199,7 +7601,7 @@
           (reference "J1") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "J14") (unit 1)
         )
@@ -7245,7 +7647,7 @@
           (reference "R8") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R58") (unit 1)
         )
@@ -7285,7 +7687,7 @@
           (reference "#PWR0265") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0403") (unit 1)
         )
@@ -7332,7 +7734,7 @@
           (reference "R22") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R159") (unit 1)
         )
@@ -7376,7 +7778,7 @@
           (reference "C18") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C217") (unit 1)
         )
@@ -7422,7 +7824,7 @@
           (reference "R23") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R93") (unit 1)
         )
@@ -7457,7 +7859,7 @@
           (reference "#PWR025") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0364") (unit 1)
         )
@@ -7501,7 +7903,7 @@
           (reference "C29") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C229") (unit 1)
         )
@@ -7545,7 +7947,7 @@
           (reference "C19") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C190") (unit 1)
         )
@@ -7589,7 +7991,7 @@
           (reference "C18") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C272") (unit 1)
         )
@@ -7637,7 +8039,7 @@
           (reference "#PWR018") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0359") (unit 1)
         )
@@ -7677,9 +8079,166 @@
           (reference "#PWR021") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0389") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "PCM_Resistor_AKL:R_4x0402_Convex") (at 177.165 130.302 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3c901616-5273-41df-ae03-cbc40a75a45d)
+    (property "Reference" "RN2" (at 177.165 121.793 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "R_4x0402_Convex" (at 177.165 124.333 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "PCM_Resistor_SMD_AKL:R_Array_Convex_4x0402" (at 189.865 130.302 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 177.165 130.302 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 04916f8a-3e85-445f-81a5-3fb381767034))
+    (pin "2" (uuid b6ca1ed4-1b97-4903-8562-85bb18660fd8))
+    (pin "3" (uuid ca768edc-fe74-4cb3-a422-7a9adf76fd80))
+    (pin "4" (uuid acafe529-a9aa-4d5b-9586-01c1b9973164))
+    (pin "5" (uuid 0c687bb5-80a5-49f5-886b-0fe0b01ca305))
+    (pin "6" (uuid 48f0aa36-b41b-4886-9fd3-d3bf6f72b6ad))
+    (pin "7" (uuid 26c65c1d-9af4-43df-9d34-68bc119560ec))
+    (pin "8" (uuid 3ca8fa29-ac9b-4087-a265-c7c682c9ac82))
+    (instances
+      (project "R2RDAC2026_REVIZE_II"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
+          (reference "RN2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Erdal:R_0603") (at 66.548 294.132 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3e58c0a3-82d5-4edd-9a50-f73d992d7fab)
+    (property "Reference" "R11" (at 66.548 291.846 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "33" (at 64.643 293.243 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "EP4CE_Footprint:R_0603_1608Metric" (at 66.548 282.702 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 66.548 294.132 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ef9141d2-a9a4-409e-a0fa-b55ec344fefb))
+    (pin "2" (uuid 4ce0efcf-3708-420b-953d-a16fbb85c2b7))
+    (instances
+      (project "EP4CGX30F23I7-REV"
+        (path "/05ff5191-099e-4938-ae17-b4b434dade8e/7fa1b710-c09f-4b00-94f8-aa083dc1e919"
+          (reference "R11") (unit 1)
+        )
+        (path "/05ff5191-099e-4938-ae17-b4b434dade8e/77a21ab2-3ab0-4ef5-a211-f1014b1f4890"
+          (reference "R23") (unit 1)
+        )
+      )
+      (project "STM32H750BGA_REV2"
+        (path "/da6c0a2a-6aa3-43a3-b809-3f163302f1df/ea44fdef-b05d-4f07-9e51-f7450537d992"
+          (reference "R1") (unit 1)
+        )
+        (path "/da6c0a2a-6aa3-43a3-b809-3f163302f1df/1c030d5c-47bb-4c7e-a106-dd5f55178bfc"
+          (reference "R38") (unit 1)
+        )
+      )
+      (project "ARTIX7_100"
+        (path "/eeda2d56-a9f7-4136-a082-8b14a479f2bd/fd040bb6-e0e4-44ea-b2eb-a16dd088db98"
+          (reference "R15") (unit 1)
+        )
+      )
+      (project "R2RDAC2026_REVIZE_II"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
+          (reference "R273") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "PCM_Resistor_AKL:R_4x0402_Convex") (at 176.784 152.019 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3e816f6d-adc9-4277-8d22-e70506dd0ea3)
+    (property "Reference" "RN3" (at 176.784 143.51 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "R_4x0402_Convex" (at 176.784 146.05 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "PCM_Resistor_SMD_AKL:R_Array_Convex_4x0402" (at 189.484 152.019 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 176.784 152.019 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b2e465b4-4b4d-466c-b235-a47706f344db))
+    (pin "2" (uuid aab69ed4-d010-4653-91e4-7973ab4ecf65))
+    (pin "3" (uuid f1003fcd-d699-4959-86e4-af80670e7754))
+    (pin "4" (uuid 5cec439b-d036-46cb-bd38-966d66c21367))
+    (pin "5" (uuid ef65c836-9f23-49c2-80cf-33eda0e84e94))
+    (pin "6" (uuid 9f559a5e-01a0-44df-8625-8cd7a8c31342))
+    (pin "7" (uuid 0c28cb16-c525-4843-b886-723c7b0a4898))
+    (pin "8" (uuid 42fdd405-d4d8-4682-a6c8-ebe5c43d0d52))
+    (instances
+      (project "R2RDAC2026_REVIZE_II"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
+          (reference "RN3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Erdal:R_0603") (at 161.29 188.976 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3fbf894b-af57-4775-ae57-c0c17082acb5)
+    (property "Reference" "R45" (at 161.29 188.976 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "22" (at 166.878 187.198 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 172.72 188.976 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 161.29 188.976 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5e8bdd81-f628-44cf-8077-4908521f5658))
+    (pin "2" (uuid e2e41d03-e9ff-448f-822a-6b3ca20eb5c2))
+    (instances
+      (project "EP4CGX30F23I7-REV"
+        (path "/05ff5191-099e-4938-ae17-b4b434dade8e/77a21ab2-3ab0-4ef5-a211-f1014b1f4890"
+          (reference "R45") (unit 1)
+        )
+      )
+      (project "XC7K325T"
+        (path "/ab18f6a5-d35a-46a2-b2f9-60ef84e0383a/546dd25f-0d41-4050-9f79-90a75bf06fe4"
+          (reference "R17") (unit 1)
+        )
+      )
+      (project "XC6SLX16-DDR3"
+        (path "/b4c4a2ec-a1ce-4df3-a38c-1b79ecc23268/3c5ce841-17d7-4acb-8fe6-51f2c469b504"
+          (reference "R16") (unit 1)
+        )
+      )
+      (project "ARTIX7_100"
+        (path "/eeda2d56-a9f7-4136-a082-8b14a479f2bd/fd040bb6-e0e4-44ea-b2eb-a16dd088db98"
+          (reference "R8") (unit 1)
+        )
+      )
+      (project "R2RDAC2026_REVIZE_II"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
+          (reference "R261") (unit 1)
         )
       )
     )
@@ -7721,7 +8280,7 @@
           (reference "C34") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C234") (unit 1)
         )
@@ -7765,7 +8324,7 @@
           (reference "C7") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C179") (unit 1)
         )
@@ -7795,7 +8354,7 @@
           (reference "#PWR0274") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0397") (unit 1)
         )
@@ -7825,7 +8384,7 @@
           (reference "#PWR0271") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0394") (unit 1)
         )
@@ -7870,7 +8429,7 @@
           (reference "#PWR0285") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0381") (unit 1)
         )
@@ -7914,7 +8473,7 @@
           (reference "C35") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C76") (unit 1)
         )
@@ -7959,7 +8518,7 @@
           (reference "#PWR0284") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0379") (unit 1)
         )
@@ -7994,7 +8553,7 @@
           (reference "#PWR010") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0367") (unit 1)
         )
@@ -8038,7 +8597,7 @@
           (reference "C38") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C212") (unit 1)
         )
@@ -8068,7 +8627,7 @@
           (reference "#PWR015") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0398") (unit 1)
         )
@@ -8112,7 +8671,7 @@
           (reference "C27") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C227") (unit 1)
         )
@@ -8160,7 +8719,7 @@
           (reference "#PWR0177") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0351") (unit 1)
         )
@@ -8204,7 +8763,7 @@
           (reference "C39") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C236") (unit 1)
         )
@@ -8250,7 +8809,7 @@
           (reference "R10") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R59") (unit 1)
         )
@@ -8287,7 +8846,7 @@
           (reference "U2") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "U65") (unit 1)
         )
@@ -8327,7 +8886,7 @@
           (reference "#PWR019") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0383") (unit 1)
         )
@@ -8367,7 +8926,7 @@
           (reference "#PWR0258") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0412") (unit 1)
         )
@@ -8411,7 +8970,7 @@
           (reference "C37") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C213") (unit 1)
         )
@@ -8446,49 +9005,9 @@
           (reference "#PWR0277") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0301") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 554.863 235.458 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5b1b0cc3-93b6-4a6e-89ed-a1d75b6f2e4f)
-    (property "Reference" "#PWR041" (at 554.863 239.268 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 554.863 230.251 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 554.863 235.458 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 554.863 235.458 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6f6cc1a5-145f-4589-895c-7b247432c02b))
-    (instances
-      (project "EP4CGX30F23I7-REV"
-        (path "/05ff5191-099e-4938-ae17-b4b434dade8e/007092b9-18c2-4941-a24b-5cb2453dcdd8"
-          (reference "#PWR041") (unit 1)
-        )
-      )
-      (project "STM32H750BGA_REV2"
-        (path "/da6c0a2a-6aa3-43a3-b809-3f163302f1df/1f28a10a-f734-4355-9978-4adbf1bb4810"
-          (reference "#PWR05") (unit 1)
-        )
-      )
-      (project "ARTIX7_100"
-        (path "/eeda2d56-a9f7-4136-a082-8b14a479f2bd/fd040bb6-e0e4-44ea-b2eb-a16dd088db98"
-          (reference "#PWR031") (unit 1)
-        )
-      )
-      (project "R2RDAC2026_REVIZE"
-        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
-          (reference "#PWR0416") (unit 1)
         )
       )
     )
@@ -8519,9 +9038,37 @@
           (reference "#PWR0283") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0378") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x04_Pin") (at 190.5 274.193 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5ca3728b-c35d-4967-a9d1-1c787f5f6612)
+    (property "Reference" "J15" (at 191.135 266.7 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x04_Pin" (at 191.135 269.24 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 190.5 274.193 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 190.5 274.193 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9105ee7b-0b97-4ba5-81b8-4cd99abacadc))
+    (pin "2" (uuid 12fa8f66-ac0e-460a-8ca0-e46f707969eb))
+    (pin "3" (uuid 24e9dcb6-4e1f-46bf-a20f-88790f7dcbc1))
+    (pin "4" (uuid acaea296-284e-4b2f-84a1-27300049aa8c))
+    (instances
+      (project "R2RDAC2026_REVIZE_II"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
+          (reference "J15") (unit 1)
         )
       )
     )
@@ -8568,7 +9115,7 @@
           (reference "C9") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C206") (unit 1)
         )
@@ -8609,7 +9156,7 @@
           (reference "C43") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C239") (unit 1)
         )
@@ -8644,7 +9191,7 @@
           (reference "#PWR0255") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0358") (unit 1)
         )
@@ -8684,7 +9231,7 @@
           (reference "#PWR013") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0407") (unit 1)
         )
@@ -8728,7 +9275,7 @@
           (reference "C28") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C228") (unit 1)
         )
@@ -8768,7 +9315,7 @@
           (reference "#PWR030") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0417") (unit 1)
         )
@@ -8814,7 +9361,7 @@
           (reference "R8") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R65") (unit 1)
         )
@@ -8859,40 +9406,9 @@
           (reference "#PWR026") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0365") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 549.402 264.287 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7074282c-3b9b-4244-9b12-197241f48f7b)
-    (property "Reference" "J4" (at 549.402 259.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "JTAG/SPI" (at 549.529 270.51 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 549.402 264.287 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 549.402 264.287 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fc5808a7-e431-42c3-8549-caeeff68e228))
-    (pin "2" (uuid fa8df463-8792-4eb2-89e2-ee7af4486093))
-    (instances
-      (project "ARTIX7_100"
-        (path "/eeda2d56-a9f7-4136-a082-8b14a479f2bd/fd040bb6-e0e4-44ea-b2eb-a16dd088db98"
-          (reference "J4") (unit 1)
-        )
-      )
-      (project "R2RDAC2026_REVIZE"
-        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
-          (reference "J15") (unit 1)
         )
       )
     )
@@ -8930,7 +9446,7 @@
           (reference "#PWR0248") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0350") (unit 1)
         )
@@ -8970,7 +9486,7 @@
           (reference "TP2") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "TP11") (unit 1)
         )
@@ -9005,9 +9521,55 @@
           (reference "#PWR016") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0355") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Erdal:R_0603") (at 161.29 191.516 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 77ff1a8b-032c-4c00-acf3-71a73f62c0a3)
+    (property "Reference" "R45" (at 161.671 191.643 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "22" (at 166.878 189.738 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 172.72 191.516 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 161.29 191.516 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6d7b3f35-2b79-49ef-a2ff-eeeaa8a1622f))
+    (pin "2" (uuid af4d097b-0025-43a5-a621-a54965bbd23d))
+    (instances
+      (project "EP4CGX30F23I7-REV"
+        (path "/05ff5191-099e-4938-ae17-b4b434dade8e/77a21ab2-3ab0-4ef5-a211-f1014b1f4890"
+          (reference "R45") (unit 1)
+        )
+      )
+      (project "XC7K325T"
+        (path "/ab18f6a5-d35a-46a2-b2f9-60ef84e0383a/546dd25f-0d41-4050-9f79-90a75bf06fe4"
+          (reference "R17") (unit 1)
+        )
+      )
+      (project "XC6SLX16-DDR3"
+        (path "/b4c4a2ec-a1ce-4df3-a38c-1b79ecc23268/3c5ce841-17d7-4acb-8fe6-51f2c469b504"
+          (reference "R16") (unit 1)
+        )
+      )
+      (project "ARTIX7_100"
+        (path "/eeda2d56-a9f7-4136-a082-8b14a479f2bd/fd040bb6-e0e4-44ea-b2eb-a16dd088db98"
+          (reference "R8") (unit 1)
+        )
+      )
+      (project "R2RDAC2026_REVIZE_II"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
+          (reference "R262") (unit 1)
         )
       )
     )
@@ -9056,7 +9618,7 @@
           (reference "U3") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "U21") (unit 1)
         )
@@ -9086,7 +9648,7 @@
           (reference "#PWR0153") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR083") (unit 1)
         )
@@ -9439,7 +10001,7 @@
           (reference "U1") (unit 3)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "U20") (unit 3)
         )
@@ -9474,7 +10036,7 @@
           (reference "#PWR0247") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0349") (unit 1)
         )
@@ -9509,7 +10071,7 @@
           (reference "#PWR0254") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0357") (unit 1)
         )
@@ -9550,7 +10112,7 @@
           (reference "C22") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C222") (unit 1)
         )
@@ -9596,7 +10158,7 @@
           (reference "R16") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R51") (unit 1)
         )
@@ -9642,7 +10204,7 @@
           (reference "R17") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R55") (unit 1)
         )
@@ -9690,7 +10252,7 @@
           (reference "#PWR096") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0299") (unit 1)
         )
@@ -9739,7 +10301,7 @@
           (reference "C3") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C221") (unit 1)
         )
@@ -9783,7 +10345,7 @@
           (reference "C31") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C189") (unit 1)
         )
@@ -9829,7 +10391,7 @@
           (reference "R8") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R63") (unit 1)
         )
@@ -9870,7 +10432,7 @@
           (reference "C24") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C225") (unit 1)
         )
@@ -9914,7 +10476,7 @@
           (reference "C40") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C238") (unit 1)
         )
@@ -9954,7 +10516,7 @@
           (reference "#PWR09") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0414") (unit 1)
         )
@@ -9998,7 +10560,7 @@
           (reference "C32") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C232") (unit 1)
         )
@@ -10042,7 +10604,7 @@
           (reference "C17") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C216") (unit 1)
         )
@@ -10082,7 +10644,7 @@
           (reference "#PWR0260") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0410") (unit 1)
         )
@@ -10123,7 +10685,7 @@
           (reference "C42") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C224") (unit 1)
         )
@@ -10163,7 +10725,7 @@
           (reference "#PWR0266") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0404") (unit 1)
         )
@@ -10209,7 +10771,7 @@
           (reference "R2") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R270") (unit 1)
         )
@@ -10244,7 +10806,7 @@
           (reference "#PWR07") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0352") (unit 1)
         )
@@ -10284,7 +10846,7 @@
           (reference "#PWR0128") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0205") (unit 1)
         )
@@ -10328,7 +10890,7 @@
           (reference "C21") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C220") (unit 1)
         )
@@ -10374,7 +10936,7 @@
           (reference "R4") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R264") (unit 1)
         )
@@ -10419,7 +10981,7 @@
           (reference "#PWR0281") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0374") (unit 1)
         )
@@ -10454,7 +11016,7 @@
           (reference "#PWR0276") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0395") (unit 1)
         )
@@ -10498,7 +11060,7 @@
           (reference "C12") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C207") (unit 1)
         )
@@ -10543,7 +11105,7 @@
           (reference "#PWR0280") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0373") (unit 1)
         )
@@ -10589,7 +11151,7 @@
           (reference "R20") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R263") (unit 1)
         )
@@ -10942,7 +11504,7 @@
           (reference "U1") (unit 2)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "U20") (unit 2)
         )
@@ -10975,7 +11537,7 @@
           (reference "#PWR0283") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR027") (unit 1)
         )
@@ -11328,7 +11890,7 @@
           (reference "U1") (unit 5)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "U20") (unit 5)
         )
@@ -11376,7 +11938,7 @@
           (reference "#PWR097") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0300") (unit 1)
         )
@@ -11416,7 +11978,7 @@
           (reference "#PWR0262") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0419") (unit 1)
         )
@@ -11460,7 +12022,7 @@
           (reference "C35") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C214") (unit 1)
         )
@@ -11495,7 +12057,7 @@
           (reference "#PWR023") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0362") (unit 1)
         )
@@ -11535,7 +12097,7 @@
           (reference "#PWR0269") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0402") (unit 1)
         )
@@ -11565,7 +12127,7 @@
           (reference "#PWR029") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0399") (unit 1)
         )
@@ -11613,7 +12175,7 @@
           (reference "#PWR0178") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0354") (unit 1)
         )
@@ -11653,7 +12215,7 @@
           (reference "#PWR020") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0384") (unit 1)
         )
@@ -11693,7 +12255,7 @@
           (reference "#PWR0261") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0406") (unit 1)
         )
@@ -11740,7 +12302,7 @@
           (reference "C4") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C247") (unit 1)
         )
@@ -11786,7 +12348,7 @@
           (reference "R24") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R98") (unit 1)
         )
@@ -11830,7 +12392,7 @@
           (reference "C25") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C215") (unit 1)
         )
@@ -11874,7 +12436,7 @@
           (reference "C36") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C235") (unit 1)
         )
@@ -11914,7 +12476,7 @@
           (reference "#PWR0263") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0418") (unit 1)
         )
@@ -11960,7 +12522,7 @@
           (reference "R3") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "R467") (unit 1)
         )
@@ -12005,7 +12567,7 @@
           (reference "#PWR028") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0372") (unit 1)
         )
@@ -12049,7 +12611,7 @@
           (reference "C31") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C231") (unit 1)
         )
@@ -12090,7 +12652,7 @@
           (reference "C23") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C223") (unit 1)
         )
@@ -12130,7 +12692,7 @@
           (reference "#PWR0278") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0388") (unit 1)
         )
@@ -12176,7 +12738,7 @@
           (reference "C6") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C242") (unit 1)
         )
@@ -12220,7 +12782,7 @@
           (reference "C19") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C218") (unit 1)
         )
@@ -12264,7 +12826,7 @@
           (reference "C30") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C230") (unit 1)
         )
@@ -12308,7 +12870,7 @@
           (reference "C17") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C205") (unit 1)
         )
@@ -12381,7 +12943,7 @@
           (reference "D5") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "D22") (unit 1)
         )
@@ -12421,7 +12983,7 @@
           (reference "#PWR0257") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0411") (unit 1)
         )
@@ -12467,7 +13029,7 @@
           (reference "C5") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C237") (unit 1)
         )
@@ -12507,7 +13069,7 @@
           (reference "#PWR0267") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0405") (unit 1)
         )
@@ -12542,7 +13104,7 @@
           (reference "#PWR011") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0380") (unit 1)
         )
@@ -12615,7 +13177,7 @@
           (reference "D1") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "D18") (unit 1)
         )
@@ -12655,7 +13217,7 @@
           (reference "#PWR0279") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0385") (unit 1)
         )
@@ -12690,7 +13252,7 @@
           (reference "#PWR0253") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0401") (unit 1)
         )
@@ -12730,7 +13292,7 @@
           (reference "#PWR0264") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0415") (unit 1)
         )
@@ -12803,7 +13365,7 @@
           (reference "D2") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "D19") (unit 1)
         )
@@ -12855,7 +13417,7 @@
           (reference "L2") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "L5") (unit 1)
         )
@@ -13208,7 +13770,7 @@
           (reference "U1") (unit 4)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "U20") (unit 4)
         )
@@ -13238,7 +13800,7 @@
           (reference "#PWR0275") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0396") (unit 1)
         )
@@ -13284,7 +13846,7 @@
           (reference "C44") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C243") (unit 1)
         )
@@ -13330,7 +13892,7 @@
           (reference "C45") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C244") (unit 1)
         )
@@ -13365,7 +13927,7 @@
           (reference "#PWR0250") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0361") (unit 1)
         )
@@ -13405,7 +13967,7 @@
           (reference "#PWR0259") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0409") (unit 1)
         )
@@ -13449,7 +14011,7 @@
           (reference "C26") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C226") (unit 1)
         )
@@ -13493,7 +14055,7 @@
           (reference "C12") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "C45") (unit 1)
         )
@@ -13533,9 +14095,57 @@
           (reference "#PWR022") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "#PWR0390") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 196.469 279.273 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid fce59e9e-0b7b-40fb-ad8b-4d7073b6c344)
+    (property "Reference" "#PWR0116" (at 202.819 279.273 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 200.025 279.273 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 196.469 279.273 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 196.469 279.273 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 340d2e5e-4982-46fe-9f8c-3ef2acdf4a58))
+    (instances
+      (project "EP4CGX30F23I7-REV"
+        (path "/05ff5191-099e-4938-ae17-b4b434dade8e/77a21ab2-3ab0-4ef5-a211-f1014b1f4890"
+          (reference "#PWR0116") (unit 1)
+        )
+      )
+      (project "XC7K325T"
+        (path "/ab18f6a5-d35a-46a2-b2f9-60ef84e0383a/546dd25f-0d41-4050-9f79-90a75bf06fe4"
+          (reference "#PWR083") (unit 1)
+        )
+      )
+      (project "XC6SLX16-DDR3"
+        (path "/b4c4a2ec-a1ce-4df3-a38c-1b79ecc23268"
+          (reference "#PWR02") (unit 1)
+        )
+        (path "/b4c4a2ec-a1ce-4df3-a38c-1b79ecc23268/3c5ce841-17d7-4acb-8fe6-51f2c469b504"
+          (reference "#PWR098") (unit 1)
+        )
+      )
+      (project "ARTIX7_100"
+        (path "/eeda2d56-a9f7-4136-a082-8b14a479f2bd/fd040bb6-e0e4-44ea-b2eb-a16dd088db98"
+          (reference "#PWR018") (unit 1)
+        )
+      )
+      (project "R2RDAC2026_REVIZE_II"
+        (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
+          (reference "#PWR0141") (unit 1)
         )
       )
     )
@@ -13608,7 +14218,7 @@
           (reference "Y3") (unit 1)
         )
       )
-      (project "R2RDAC2026_REVIZE"
+      (project "R2RDAC2026_REVIZE_II"
         (path "/fd8d5118-3b8e-4403-850d-a1523e5be0c2/fbe758d9-ca2e-446c-b491-f7b77b0a49ef"
           (reference "Y3") (unit 1)
         )

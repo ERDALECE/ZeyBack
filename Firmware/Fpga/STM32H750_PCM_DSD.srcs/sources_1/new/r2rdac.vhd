@@ -277,8 +277,9 @@ signal F_XMOS : STD_LOGIC_VECTOR (3 DOWNTO 0);
  
   signal lrclk_det : std_logic;
  
-  signal SAMPLE_RATE_buf : STD_LOGIC_VECTOR (3 DOWNTO 0);
+  signal SAMPLE_RATE_buf : std_logic_vector (3 DOWNTO 0);
   signal DSD_EN_buf : std_logic;
+  signal DSD_EN_RL_buf     : std_logic := '0';
   signal BR_MCU_buf : std_logic;
  
   signal STM32_dsd_clk : std_logic;
@@ -354,8 +355,8 @@ signal F_XMOS : STD_LOGIC_VECTOR (3 DOWNTO 0);
   signal mute_DATA_R       : std_logic := '0';
   
   signal fs_change_cnt : integer range 0 to 2 := 0;
-
-
+  
+  
 component pll
 PORT
  (
@@ -401,7 +402,7 @@ i2s_direct_in(0) <= I2S_FPGA_BCKL;
 i2s_direct_in(1) <= I2S_FPGA_LRCLK;
 i2s_direct_in(2) <= I2S_FPGA_DATA;
 
-DSD_EN <=  (DSD_EN_buf or MUTE) and not XMOS_DSDON;
+DSD_EN <=  (DSD_EN_buf or MUTE);-- and not XMOS_DSDON;
 SAMPLE_RATE <=SAMPLE_RATE_BUF;
 
 BR_MCU <= BR_MCU_buf;
@@ -449,7 +450,7 @@ u_rl_delay: entity work.relay_delay
     port map (
         clk       => mhz100clk,
         rst       => rst_n_fpga,
-        trig      =>  DSD_EN_buf and not XMOS_DSDON,
+        trig      => DSD_EN_buf,-- and not XMOS_DSDON, --DSD_EN_RL_Buf,--
         relay_out => DSD_EN_RL
     ); 
     
@@ -499,7 +500,7 @@ end process;
     is24    => BR_MCU_buf,
     dsp_on    => DSP_SEL,
     reclk_on  => RCLK_ON,
-    lock      => '1',
+    lock      => COAX_LOCK or OPTIC_LOCK_1 or OPTIC_LOCK_2,
     stream    => STM32_EN,
     mute      => MUTE,
     fifo_lvl  => "00000000",

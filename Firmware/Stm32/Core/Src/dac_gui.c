@@ -77,8 +77,8 @@ static void apply_rclk_pin(uint8_t on)
                 break;
 
             case IR_KEY_SRC_M:
-                 ui_cur.src--;
-                if (ui_cur.src < 0) ui_cur.src = 9;
+                 //ui_cur.src--;
+                 ui_cur.src = (ui_cur.src == 0) ? 9 : (ui_cur.src - 1);
                 rc5_changed = 1;
                 break;
 

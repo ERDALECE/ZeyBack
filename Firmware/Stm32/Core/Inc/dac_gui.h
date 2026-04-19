@@ -68,9 +68,9 @@ enum {
     SRC_HDMI = 4,
     SRC_XMOS = 5,
     SRC_COAX_FPGA = 6,
-	SRC_I2S_FPGA = 7,
-	SRC_OPT1_FPGA = 8,
-	SRC_OPT2_FPGA = 9,
+	SRC_OPT1_FPGA = 7,
+	SRC_OPT2_FPGA = 8,
+	SRC_I2S_FPGA = 9,
 };
 
 
